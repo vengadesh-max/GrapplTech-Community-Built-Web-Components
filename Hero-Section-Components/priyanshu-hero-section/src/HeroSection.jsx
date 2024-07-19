@@ -1,10 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./HeroSection.css"; // Import the CSS file
 import { useSpring, animated } from 'react-spring';
+
+// Import the video and image files
+import backgroundVideo from './assets/background-video.mp4'; // Adjust the path as needed
+import backgroundImage from './assets/background-image.jpg'; // Adjust the path as needed
 
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
+  const [showImage, setShowImage] = useState(false); // State to handle image visibility
+  const videoRef = useRef(null); // Ref to access the video element
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,7 +25,7 @@ const HeroSection = () => {
     opacity: 1,
     transform: 'translateY(0)',
     from: { opacity: 0, transform: 'translateY(20px)' },
-    config: { duration: 1000 },
+    config: { duration: 2000 },
   });
 
   useEffect(() => {
@@ -36,8 +42,23 @@ const HeroSection = () => {
     };
   }, []);
 
+  const handleVideoEnd = () => {
+    setShowImage(true); // Show image when video ends
+  };
+
   return (
-    <div className="hero-container">
+    <div className={`hero-container ${showImage ? 'show-image' : ''}`}>
+      <video
+        className="background-video"
+        autoPlay
+        muted
+        ref={videoRef}
+        onEnded={handleVideoEnd}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="background-image" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
       <nav className="navbar" aria-label="Main Navigation">
         <div className="logo-placeholder">GrapplTech</div>
         <div

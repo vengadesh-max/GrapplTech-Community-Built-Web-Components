@@ -22,6 +22,41 @@ body, html {
     align-items: center;
     color: #fff;
     text-align: center;
+    overflow: hidden; /* Hide anything outside the container */
+    transition: background-image 1s ease-in-out; /* Smooth transition for background image */
+
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    z-index: -1; /* Place video behind other elements */
+    transition: opacity 3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/background-image.jpg'); /* Set the image path */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 3s ease-in-out; /* Smooth transition for opacity */
+    z-index: -1; /* Place image behind other elements */
+}
+
+.hero-container.show-image .background-image {
+    opacity: 1; /* Show image */
+}
+
+.hero-container.show-image .background-video {
+    opacity: 0; /* Hide video */
 }
 
 .navbar {
