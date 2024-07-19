@@ -10,6 +10,7 @@ const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
   const [showImage, setShowImage] = useState(false); // State to handle image visibility
+  const [videoOpacity, setVideoOpacity] = useState(1); // State to handle video opacity
   const videoRef = useRef(null); // Ref to access the video element
 
   const toggleMenu = () => {
@@ -42,9 +43,32 @@ const HeroSection = () => {
     };
   }, []);
 
-  const handleVideoEnd = () => {
-    setShowImage(true); // Show image when video ends
-  };
+  useEffect(() => {
+    // Preload the background image
+    const img = new Image();
+    img.src = backgroundImage;
+  }, []);
+
+  useEffect(() => {
+    const handleTimeUpdate = () => {
+      const video = videoRef.current;
+      const fadeDuration = 4; // Seconds before the video ends to start fading
+      if (video.duration - video.currentTime <= fadeDuration) {
+        setVideoOpacity((video.duration - video.currentTime) / fadeDuration);
+        if (video.duration - video.currentTime <= fadeDuration) {
+          setShowImage(true); // Show image when video is about to end
+        }
+      }
+    };
+
+    const video = videoRef.current;
+    video.addEventListener('timeupdate', handleTimeUpdate);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+    };
+  }, []);
+
 
   return (
     <div className={`hero-container ${showImage ? 'show-image' : ''}`}>
@@ -53,7 +77,7 @@ const HeroSection = () => {
         autoPlay
         muted
         ref={videoRef}
-        onEnded={handleVideoEnd}
+        style={{ opacity: videoOpacity }} // Apply opacity to video
       >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
