@@ -5,39 +5,12 @@ body {
     background-color: #000;
     color: #fff;
     display: flex;
-    background-image: url('123.png'); /* Initial background image */
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease-in-out;
 }
 
-.left-banner {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 200px;
-    background-size: cover;
-    background-position: center;
-    color: #ff073a;
-    text-shadow: 0 0 10px #8b0000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 1000; /* Ensure the left banner stays on top */
-}
-
-.banner-text {
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-}
-
 .content {
-    margin-left: 200px;
     padding: 20px;
     flex: 1;
 }
@@ -136,6 +109,10 @@ nav a:hover {
 .description {
     flex: 1;
     padding-left: 20px;
+}
+
+.full-description {
+    display: none;
 }
 
 .contact-form {
