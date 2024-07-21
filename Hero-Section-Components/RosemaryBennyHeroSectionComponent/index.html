@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Haven</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="hero.html"><img src="logo.svg" id="logo" height="100" class="custom-logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex custom-search-form">
+                            <div class="input-group mb-4 border rounded-pill p-1">
+                                <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                                <div class="input-group-append border-0">
+                                    <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="content">
+            <div class="info">
+                <h1>A Feast for the Senses</h1>
+                <p>Explore Exquisite Recipes, Culinary Tips, and Food Stories That Delight Every Palate,</p>
+                <button>Start Cooking Here</button>
+            </div>
+        </div>
+    </div>
+    <div class="background-overlay">
+        <div class="image-strip">
+            <img src="./pexels-chokniti-khongchum-1197604-2280545.jpg" alt="Image 1" class="blink-image">
+            <img src="./pexels-dzeninalukac-1583884.jpg" alt="Image 2" class="blink-image">
+            <img src="./pexels-enginakyurt-1437267.jpg" alt="Image 3" class="blink-image">
+            <img src="./pexels-fotios-photos-1279330.jpg" alt="Image 4" class="blink-image">
+        </div>
+        <div class="image-strip">
+            <img src="./pexels-isabella-mendes-107313-338713.jpg" alt="Image 5" class="blink-image">
+            <img src="./pexels-janetrangdoan-769969.jpg" alt="Image 6" class="blink-image">
+            <img src="./pexels-xmtnguyen-2664216.jpg "alt="Image 7" class="blink-image">
+            <img src="./pexels-paggiarofrancesco-1117862.jpg" alt="Image 8" class="blink-image">
+        </div>
+        <div class="image-strip">
+            <img src="./pexels-pixabay-60616.jpg" alt="Image 9" class="blink-image">
+            <img src="./pexels-suzyhazelwood-1126359.jpg" alt="Image 10" class="blink-image">
+            <img src="./side-view-club-sandwich-with-salted-cucumbers-lemon-olives-round-white-plate.jpg" alt="Image 11" class="blink-image">
+            <img src="./tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese.jpg" alt="Image 12" class="blink-image">
+        </div>
+        <div class="image-strip">
+            <img src="./pexels-jai-vanguardia-1239979185-23876986.jpg" alt="Image 13" class="blink-image">
+            <img src="./pexels-joshsorenson-1546896.jpg" alt="Image 14" class="blink-image">
+            <img src="./pexels-sarthak-2782336-4331491.jpg" alt="Image 15" class="blink-image">
+            <img src="./pexels-shantanu-pal-938952-2679501.jpg" alt="Image 16" class="blink-image">
+        </div>
+    </div>
+    <script src="" async defer>
+        // Get all images with the blink-image class
+const blinkImages = document.querySelectorAll('.blink-image');
+
+// Add the animation to all images at the same time
+blinkImages.forEach((image) => {
+  image.classList.add('blink-image');
+});
+    </script>
+</body>
+</html>
