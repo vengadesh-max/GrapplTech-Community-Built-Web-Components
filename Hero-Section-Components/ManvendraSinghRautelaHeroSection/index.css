@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+width: 100vw;
+background-image: url(car27.webp);
+/* background-repeat: no-repeat; */
+height: 100vh;
+background-size: cover;
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+}
+.main_container{
+    margin: 0%;
+    padding: 0%;
+background-image: url(car27.webp);
+background-repeat: no-repeat;
+background-size: 1600px;
+height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right:  80px;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin-inline: 40px;
+    color: white;
+    font-size: 22px;
+    margin-right: 11px;
+    font-family: "Rajdhani", sans-serif;
+
+}
+
+ul li a:hover{
+color: yellow;
+border-bottom: 2px solid white;
+}
+
+.logo{
+    margin-left: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.icon{
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+    display: none;
+}
+
+.search_bar{
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 15px  rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    margin: 20px 40px 0px 0px;
+}
+
+.search_bar:hover input{
+    width: 700px;
+border-radius: 20px;
+padding: 10px 20px;
+}
+
+.search_bar input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    color: rgb(220, 183, 183);
+    font-size: 15px;
+}
+
+.search_bar a .fa{
+color: rgb(255, 255, 255);
+font-size: 18px;
+}
+
+.col1{
+    color: white;
+    margin: 30vh 0px 0px 60px;
+    font-family: "Chakra Petch", sans-serif;
+
+}
+
+h2{
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+
+}
+
+.col1 button{
+    width: 130px;
+    height: 45px;
+    margin: 40px 0px 0px 0px;
+    font-size: 20px;
+    border: 1px solid yellow;
+    font-family: "Arsenal SC", sans-serif;
+background-color: yellow;
+color: rgb(0, 0, 0);
+}
+
+.col1 button:hover{
+    width: 130px;
+    height: 45px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-size: 20px;
+    border: 1px solid rgb(86, 79, 222);
+    font-family: "Arsenal SC", sans-serif;
+background-color: transparent;
+color: whitesmoke;
+}
+
+
+.col2 {
+    position: absolute;
+    top:90vh;
+right: 100px;
+    /* display: inline; */
+    margin: 0;
+}
+
+
+
+.col2 a{
+    text-decoration: none;
+
+}
+
+.col2 li{
+    margin-left: 30px;
+    color: white;
+}
+
+.col2 li:hover{
+color: blue;
+}
+
+
+@media only screen and (max-width:1200px) {
+    
+    .main_container{
+        background-image: url(car29.jpg);
+        background-size: cover;
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    }
+   
+    
+    nav ul{
+        display: none;
+    }
+
+    .icon{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        height: 240px;
+        text-align: center;
+        padding: 0px;
+        gap: 22px;
+    }
+
+    .search_bar{
+        top: 10px;
+        left: 100px;
+    }
+
+    .search_bar:hover input{
+        width: 100px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .main_container{
+        background-image: url(back2.jpeg);
+        background-size: cover;
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    }
+
+    .col1{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45vh;
+    }
+}
