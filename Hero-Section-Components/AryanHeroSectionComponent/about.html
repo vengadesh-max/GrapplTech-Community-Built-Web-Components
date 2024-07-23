@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            article {
+                margin-top: 120px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 4%;
+            }
+            .about_us_container {
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+            }
+
+            #about {
+                background-color: #231942;
+                padding: 20px;
+                border: none;
+                color: whitesmoke;
+                border-color: white;
+                border-width: 4px;
+                border-radius: 20px;
+            }
+
+            h1, h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 60px;
+            }
+
+            h3 {
+                text-align: center;
+                padding: 10px;
+                font-size: 45px;
+                font-family: Roboto;
+                font-weight: 500;
+            }
+
+            .para {
+                font-size: 30px;
+                font-family: Roboto;
+                font-weight: 500;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+
+            .company_info, .mission_values, .team, .company_photos {
+                margin-bottom: 20px; 
+                background-color: #bcb8b1;
+                padding: 50px;
+                border-radius: 30px;  
+            }
+
+            .values {
+                margin-top: 100px;
+            }
+
+            #about_list {
+                list-style-type: none;
+                padding: 0;
+                font-size: 24px;
+            }
+
+            #about_list {
+                background: #e0e0e0;
+                border-radius: 20px;
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 4px;
+            }
+
+            .team_members {
+                display: flex;
+                padding: 20px;
+                background-color: black;
+                color: aliceblue;
+                border: none;
+                border-radius: 10px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .team_member {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .team_photo {
+                
+                width: auto;
+                height: 300px;
+                border-radius: 10px;
+            }
+
+            .photo_gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            .photo_gallery img {
+                width: calc(33% - 15px);
+                border-radius: 10px;
+            }
+
+            @media (max-width: 650px) {
+            .photo_gallery img {
+                width: calc(50% - 10px);
+            }
+
+            .team_member {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .team_photo {
+                margin-bottom: 10px;
+            }
+            }
+            
+
+        </style>
+        <title> E-Commerce Website </title>
+      </head>
+      <body>
+        <header class="main-header">
+          <nav class="nav">
+            <div class="container nav_container">
+                <div id="web-logo">
+                    <h1 class="nav-logo-heading">BaazarHub.com</h1>
+                    <img src="./photos/logo.jpeg" alt="logo" class="nav-logo-heading">
+                </div>
+              <ul class="nav_list">
+                <li class="nav_item"><a href="./index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="./about.html" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="./contact.html" class="nav_link">Contact</a></li>
+                <li class="nav_item">
+                  <a href="./sign-up.html" class="nav_link">Sign up</a>
+                </li>
+              </ul>
+              <div class="nav_items">
+                <form action="#" class="nav_form">
+                  <input
+                    type="text"
+                    class="nav_input"
+                    placeholder="search here...." />
+                  <img src="./photos/search.png" alt="" class="nav_search" />
+                </form>
+                <img src="./photos/heart.png" alt="" class="nav_heart" />
+                <a href="./cart.html">
+                  <img src="./photos/cart.png" alt="" class="nav_cart" />
+                </a>
+              </div>
+              <span class="hamburger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </span>
+            </div>
+          </nav>
+          <nav class="mobile_nav mobile_nav_hide">
+            <ul class="mobile_nav_list">
+              <li class="mobile_nav_item">
+                <a href="/" class="mobile_nav_link">Home</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="#" class="mobile_nav_link">About</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="#" class="mobile_nav_link">Contact</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="/cart.html" class="mobile_nav_link">Cart</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <article>
+            <div class="about_us_container">
+                <h1 id="about">About Us</h1>
+                <section class="company_info">
+                  <h2>Our Story</h2>
+                  <p class="para">
+                    Founded in 2020, Example E-Commerce has been dedicated to providing the best products at unbeatable prices. Our journey started with a small team of passionate individuals and has grown into a thriving business serving thousands of happy customers worldwide.
+                  </p>
+                </section>
+                <section class="mission_values">
+                  <h2>Our Mission</h2>
+                  <p class="para">
+                    Our mission is to deliver high-quality products that bring value and satisfaction to our customers. We strive to exceed expectations through exceptional customer service and a commitment to innovation.
+                  </p>
+                  <h2 class="values">Our Values</h2>
+                  <ul id="about_list">
+                    <li>Customer Satisfaction</li>
+                    <li>Quality Products</li>
+                    <li>Integrity and Trust</li>
+                    <li>Innovation</li>
+                    <li>Community Involvement</li>
+                  </ul>
+                </section>
+                <section class="team">
+                  <h2>Meet Our Team</h2>
+                    <div class="team_members">
+                        <div class="team_member">
+                            <img src="./photos/CEO.jpg" alt="CEO" class="team_photo">
+                            <h3>Jane Doe</h3>
+                            <p class="para">CEO</p>
+                        </div>
+                        <div class="team_member">
+                            <img src="./photos/COO.webp" alt="COO" class="team_photo">
+                            <h3>John Smith</h3>
+                            <p class="para">COO</p>
+                        </div>
+                    </div>
+                  
+                </section>
+                <section class="company_photos">
+                  <h2>Our Journey</h2>
+                  <div class="photo_gallery">
+                    <img src="./photos/journey1.webp" alt="Our Office">
+                    <img src="./photos/journey2.jpeg" alt="Team Meeting">
+                    <img src="./photos/journey3.jpeg" alt="Product Launch">
+                  </div>
+                </section>
+              </div>
+              
+        </article>
+        
+
+        <footer style="
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-left: 5%;
+            margin-right: 5%;">
+          <div class="footerLeft">
+              <div class="footerMenu">
+                  <h1 class="fMenuTitle">About Us</h1>
+                  <ul class="fList">
+                      <li class="fListItem">Company</li>
+                      <li class="fListItem">Contact</li>
+                      <li class="fListItem">Careers</li>
+                      <li class="fListItem">Affiliates</li>
+                      <li class="fListItem">Stores</li>
+                  </ul>
+              </div>
+              <div class="footerMenu">
+                  <h1 class="fMenuTitle">Useful Links</h1>
+                  <ul class="fList">
+                      <li class="fListItem">Support</li>
+                      <li class="fListItem">Refund</li>
+                      <li class="fListItem">FAQ</li>
+                      <li class="fListItem">Feedback</li>
+                      <li class="fListItem">Stories</li>
+                  </ul>
+              </div>
+              <div class="footerMenu">
+                  <h1 class="fMenuTitle">Products</h1>
+                  <ul class="fList">
+                      <li class="fListItem">Nike</li>
+                      <li class="fListItem">Puma</li>
+                      <li class="fListItem">Adidas</li>
+                      <li class="fListItem">Peter England</li>
+                      <li class="fListItem">Woodland</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footerRight">
+              <div class="footerRightMenu">
+                  <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                  <div class="fMail">
+                      <input type="text" placeholder="your@email.com" class="fInput">
+                      <button class="fButton">Join!</button>
+                  </div>
+              </div>
+              <div class="footerRightMenu">
+                  <h1 class="fMenuTitle">Follow Us</h1>
+                  <div class="fIcons">
+                      <img src="./photos/facebook.png" alt="" class="fIcon">
+                      <img src="./photos/twitter.png" alt="" class="fIcon">
+                      <img src="./photos/instagram.png" alt="" class="fIcon">
+                      <img src="./photos/whatsapp.png" alt="" class="fIcon">
+                  </div>
+              </div>
+              <div class="footerRightMenu">
+                  <span class="copyright">@BaazarHub.com All rights reserved. 2024.</span>
+              </div>
+          </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

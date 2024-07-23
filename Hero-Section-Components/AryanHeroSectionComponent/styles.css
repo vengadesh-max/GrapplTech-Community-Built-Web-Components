@@ -20,7 +20,7 @@ html {
 body {
   font-family: var(--font-main);
   font-size: 1.6rem;
-  margin-bottom: 100px;
+  background-color: #d9d9d9;
 }
 mainBody {
   margin-top: 1000px;
@@ -37,7 +37,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: azure;
+    background-color: #adb5bd;
     color: #231e1e;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -518,4 +518,126 @@ section {
   border-radius: 0.5rem;
 }
 
+.gallery{
+  display: none;
+}
+
+.gallery {
+  padding: 50px;
+  display: flex;
+  margin-top: 20px;;
+}
+
+.galleryTitle {
+  font-size: 300%;
+}
+
+.galleryItem {
+  flex: 1;
+  padding: 50px;
+}
+
+.galleryImg {
+  width: 100%;
+}
+
+.services_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.service {
+  flex: 1;
+  text-align: center;
+}
+
+.service_img {
+  width: 100px;
+}
+
+.service_title {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  background-color: #6c757d;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 30px;
+  height: 300px;
+  width: 90%;
+  align-items: center;
+}
+
+.footerLeft {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  height: 300px;
+  width: 90%;
+}
+
+.fMenuTitle {
+  font-size: 20px;
+}
+
+.fList {
+  flex: 1;
+  list-style: none;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+
+.fListItem {
+  margin-bottom: 15px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.fInput {
+  padding: 7px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.fIcons{
+  display: flex;
+}
+
+.fIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+}
 
