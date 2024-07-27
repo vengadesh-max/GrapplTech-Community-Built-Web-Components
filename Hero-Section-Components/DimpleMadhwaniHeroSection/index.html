@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dela Jewels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="images/logo.png" type="image/png" style="background-color: azure">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+<div class="background">
+<header class="header">
+        
+    <a href="#"><img alt="Logo" class="logo" src="images/logo.png" type="image/png"></a>
+
+            <div class="search">
+            <ion-icon class="icon" name="search-outline"></ion-icon>Search
+            <input class="search-bar" type="text">
+            </div>
+            
+        <div class="nav-menu">
+          <nav class="main-nav">
+            <ul class="nav-items">
+                <li><a href="#" class="nav-items-link" >Home</a></li>            
+                <li><a href="#"class="nav-items-link" >Collection</a>
+            </li>
+                <li><a href="#"class="nav-items-link" >Contact<a></li>
+            <li class="nav-buttons">
+                <button class="nav-items-link sign-in">Sign In</button>
+            </li>
+            </ul>
+        </nav>
+            <button class="button-nav">
+                <ion-icon class="menu-nav-icon"
+                name="menu-outline"></ion-icon>
+                <ion-icon class="menu-nav-icon"
+                name="close-outline"></ion-icon>
+            </button>
+        </div>
+    </header>
+</div>
+<div class="blur-overlay"></div>
+<div class="form-popup">
+    <span class="cls-btn"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="signin">
+        <span class="form-head">Welcome Back!</span>
+        <div class="login">
+            <input class="email" type = "email" placeholder="Email Address">
+            <input class="pass" type = "password" placeholder="Password">
+            <a href="#" class="link">Forgot Password?</a>
+            <button class="login-btn" type="submit">Login</button>
+            <p class="bottom-link">Don't have an account yet? <a href="#" id ="signup-link">Register</a></p>
+        </div>
+    </div>
+        <div class="signup">
+            <span class="form-head">Get Started!</span>
+            <div class="register">
+                <input class="email" type = "email" placeholder="Email Address">
+                <input class="pass" type = "password" placeholder="New Password">
+                <div class="policy-text"><input type="checkbox" id="policy">
+                    <label for="policy"> I agree the <a href="#" class="option">Terms & Conditions</a></label>
+                </div>
+                    <button class="register-btn" type="submit">Sign Up</button>
+                    <p class="bottom-link">Already have an account? <a href="#" id ="login-link">Login</a></p>
+            </div>
+        </div>
+</div>
+
+    <div class="text-box">
+        <h1 class="heading">
+            <span class="heading-main">Dela Jewels</span>
+            <span class="heading-sub">where royalty begins..</span>
+        </h1>
+
+        <a href="#" class="btn btn-explore">Explore</a>
+    </div>
+   
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
