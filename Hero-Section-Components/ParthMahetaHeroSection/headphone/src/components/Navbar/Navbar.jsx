@@ -3,6 +3,7 @@ import { MdMenu } from "react-icons/md";
 import { SlEarphones } from "react-icons/sl";
 import { UpdateFollower } from "react-mouse-follower";
 import { motion } from "framer-motion";
+// import Logo from "../../assets/icons/Logo.jpg";
 const NavbarMenu = [
   {
     id: 1,
@@ -36,7 +37,8 @@ const Navbar = () => {
           className="container flex justify-between items-center"
         >
           {/* Logo Section */}
-          <div>
+          <div className="flex items-end justify-center text-lg">
+            <img src="/icons8-logo.svg" alt="" className="w-8 h-8"/>
             <a href="#" className="font-bold text-xl uppercase ">
               Swift <span className="font-extralight text-white">Play</span>
             </a>

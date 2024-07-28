@@ -39,30 +39,30 @@ const headphoneData = [
   {
     id: 1,
     image: Headphone,
-    title: "Wireless Headphones",
+    title: "Immortal 500",
     subtitle:
       "Where Innovation Meets Sound: Explore Our Wireless Headphones for a Superior Audio Journey.",
-    price: "$100",
+    price: "$150",
     modal: "Cocoa Comfort",
-    bgColor: "#800020",
+    bgColor: "#A0522D"	,
   },
   {
     id: 2,
     image: Headphone2,
-    title: "Wireless Headphones",
-    subtitle: "sjdhjsdd.",
-    price: "$100",
-    modal: "Lime Green",
-    bgColor: "#00FF00",
+    title: "Rockid Rush",
+    subtitle: "Bold sea green, unbeatable sound – headphones with premium audio quality and a striking look.",
+    price: "$99",
+    modal: "Emerald Wave",
+    bgColor: "rgb(46,139,87)",
   },
   {
     id: 3,
     image: Headphone3,
-    title: "Wireless Headphones",
-    subtitle: "zdfjdj",
-    price: "$100",
-    modal: " Ocean Blue",
-    bgColor: "#4f42b5",
+    title: "Wireless Q2",
+    subtitle: "Elevate your listening with Abyss Blue headphones – where exceptional sound meets eye-catching elegance",
+    price: "$85",
+    modal: "Abyss Blue",
+    bgColor: "#6495ED",
   },
 ];
 const Hero = () => {
@@ -73,6 +73,7 @@ const Hero = () => {
   return (
     <>
       <section className="bg-brandDark text-white font-varela">
+
         <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[700px]">
           {/* Info */}
           <div className="flex flex-col justify-center py-14 md:py-0 xl:max-w-[500px]">
@@ -107,7 +108,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="show"
                   exit="exit"
-                  className="text-sm leading-loose text-white/80"
+                  className="text-lg leading-loose text-white/80"
                 >
                   {activeData.subtitle}
                 </motion.p>
@@ -150,7 +151,7 @@ const Hero = () => {
                 <div className="w-20 h-[1px] bg-white"></div>
               </div>
               {/* list switcher */}
-              <div className="grid grid-cols-3 gap-10 ">
+              <div className="grid grid-cols-3 gap-10">
                 {headphoneData.map((item) => {
                   return (
                     <UpdateFollower
@@ -167,7 +168,7 @@ const Hero = () => {
                     >
                       <div
                         onClick={() => handleActiveData(item)}
-                        className="grid grid-cols-2 place-items-center cursor-pointer"
+                        className="grid grid-cols-2 gap-3 place-items-center cursor-pointer"
                       >
                         <div>
                           <img src={item.image} alt="" className="w-[200px]" />
