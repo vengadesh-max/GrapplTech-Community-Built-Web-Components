@@ -1,14 +1,14 @@
 body{
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
 }
 nav{
-    background-color: #F6FDC3;
+    background-color: #d1f9f1;
     position: fixed;
     width: 100%;
-    height:70px;
+    height:50px;
     font-size: 28px;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,7 @@ nav{
     box-shadow: 2px 2px 3px rgba(153, 238, 231, 0.841);
     padding-bottom: 5px;
     z-index: 1;
+
 }
 ul{
     margin-right: 5%;
@@ -41,23 +42,126 @@ a:hover{
     color: #219C90;
     transition: 300ms;
 }
+.welcome{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    height: 80vh;
+}
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+video{
+    height: 100vh;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); 
+}
+.overlay .text{
+    padding: 20px;
+    border-radius: 8px;
+}
+.founder{
+    margin-top:10vh;
+}
+.welcome-image h1{
+    margin-left: 5%;
+    margin-top: 20vh;
+    text-align: left;
+    position: relative;
+    font-size: 3em;
+    color: #e9e2e2;
+}
+
+.welcome-quote{
+    margin-left: 5%;
+    font-size: 1.5em;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.gettouch{
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-left: 5%;
+    margin-bottom: 20vh;
+    color: #0056b3;
+}
+.gettouch:hover{
+    border-color: #007BFF;
+    color: #fff;
+    background-color: #007BFF;
+    cursor: pointer;
+
+}
+.founder{
+    padding-top:10vh ;
+}
+.founder img{
+    border-radius: 50%;
+}
+/* works done */
+.worksdone {
+    height: 20vh;
+    width: 100%;
+    margin-right: 5%;
+    background-color: #3cb0f8;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white; /* Ensures text is readable against the background */
+    text-align: center; /* Centers the text within each box */
+}
+
+.worksdone div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.worksdone h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.worksdone p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+/* Hero Section */
 .hero-section{
     display: flex;
-    padding-top:100px;
-    padding-bottom: 30px;
+    justify-content: space-between;
+    padding-top: 30px;
     background-color: #CDFADB;
-    position: static;
     width: 100%;
-    height:fit-content;
+    height: 100%;
     align-items: center;
     
 }
 .container{
     padding: 30px;
     margin-left: 50px;
-    margin-right: 3%;
+    margin-right: 6%;
+    height: fit-content;
     border-radius: 25px;
     box-shadow: -8px 8px 3px rgb(158, 219, 233);
+}
+.container:hover{
+    box-shadow: 8px -8px 3px rgb(158, 219, 233);
 }
 .qut{
     width: 100%;
@@ -85,7 +189,7 @@ a:hover{
 .welbanner{
     border-radius: 25px;
     padding: 30px;
-    height: 550px;
+    height: fit-content;
     width:fit-content;
     margin-left: 5%;
     background-color: #219C90;
@@ -93,10 +197,9 @@ a:hover{
 .welbanner img {
     border-radius: 8px;
 }
-
 .headline {
     font-family: 'Georgia', serif;
-    font-size: 2em;
+    font-size: 1.7em;
     color: #fff;
     margin-bottom: 7px;
 }
@@ -113,7 +216,7 @@ a:hover{
     font-family: 'Verdana', sans-serif;
     font-size: 1em;
     color: #f2e042;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .contact-button {
@@ -129,4 +232,71 @@ a:hover{
 
 .contact-button:hover {
     background-color: #0056b3;
+}
+/* About section */
+.about{
+    height: 100vh;
+    width: 100%;
+    background-color: #CDFADB;
+    padding: 10px;
+}
+/* responsive section */
+@media all and (max-width:1198px){
+    nav{
+        font-size: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .founder{
+        display: none;
+    }
+    .hero-section{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .welbanner{
+        align-items: center;
+        width: 80vw;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .welbanner img{
+        align-self: center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .container{
+        margin-left: 5%;
+        margin-top: 50px;
+        height: fit-content;
+        box-shadow:  -8px 8px 3px rgb(158, 219, 233),8px -8px 3px rgb(158, 219, 233);;
+    }
+}
+
+@media all and (max-width:412px){
+    nav{
+        height: 50px;
+        font-size: medium;
+    }
+    nav img{
+        height: 40px;
+        width: 50px;
+    }
+    .worksdone{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .founder{
+        display: none;
+    }
+    .welbanner{
+        padding-top: 30px;
+    }
+    .welbanner img{
+        width: 350px;
+    }
 }
