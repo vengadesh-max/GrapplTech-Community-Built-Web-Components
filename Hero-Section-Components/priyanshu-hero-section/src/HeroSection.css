@@ -12,6 +12,7 @@ body, html {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
+/* Container for the hero section */
 .hero-container {
     position: relative;
     height: 100vh;
@@ -24,8 +25,9 @@ body, html {
     text-align: center;
     overflow: hidden; /* Hide anything outside the container */
     transition: background-image 1s ease-in-out; /* Smooth transition for background image */
-
 }
+
+/* Style for the background video */
 .background-video {
     position: absolute;
     top: 0;
@@ -37,6 +39,7 @@ body, html {
     transition: opacity 3s ease-in-out; /* Smooth transition for opacity */
 }
 
+/* Style for the background image */
 .background-image {
     position: absolute;
     top: 0;
@@ -51,6 +54,7 @@ body, html {
     z-index: -1; /* Place image behind other elements */
 }
 
+/* Show the image when state changes */
 .hero-container.show-image .background-image {
     opacity: 1; /* Show image */
 }
@@ -59,6 +63,7 @@ body, html {
     opacity: 0; /* Hide video */
 }
 
+/* Style for the navigation bar */
 .navbar {
     position: fixed;
     top: 0;
@@ -71,11 +76,13 @@ body, html {
     z-index: 1000;
 }
 
+/* Style for the logo */
 .logo-placeholder {
     font-size: 1.6rem;
     color: #fff;
 }
 
+/* Style for the menu icon */
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -85,6 +92,7 @@ body, html {
     color: #fff;
 }
 
+/* Style for the navigation menu */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -94,6 +102,7 @@ body, html {
     flex-wrap: wrap; /* Allows wrapping of menu items */
 }
 
+/* Style for navigation links */
 .nav-menu li a {
     display: block;
     color: #fff;
@@ -104,6 +113,7 @@ body, html {
     font-size: 0.9rem; /* Reduced font size */
 }
 
+/* Underline effect for active and hovered links */
 .nav-menu li a::after {
     content: '';
     display: block;
@@ -122,16 +132,19 @@ body, html {
     transform: scaleX(1);
 }
 
+/* Style for the open navigation menu */
 .nav-menu.open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+/* Style for the hero content */
 .hero-content {
     max-width: 600px;
 }
 
+/* Style for the headline */
 .headline {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -140,6 +153,7 @@ body, html {
     color: #004080;
 }
 
+/* Style for the subheadline */
 .subheadline {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -149,6 +163,7 @@ body, html {
     color: #004080;
 }
 
+/* Style for the call-to-action button */
 .cta-button {
     background: #ffcc00;
     color: #004080;
@@ -166,6 +181,7 @@ body, html {
     color: #004080;
 }
 
+/* Overlay for closing the menu when clicking outside */
 .overlay {
     position: fixed;
     top: 0;
@@ -175,7 +191,6 @@ body, html {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     z-index: 999; /* Just below the navbar */
 }
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {

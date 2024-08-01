@@ -1,27 +1,28 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./HeroSection.css"; // Import the CSS file
-import { useSpring, animated } from 'react-spring';
-
-// Import the video and image files
-import backgroundVideo from './assets/background-video.mp4'; // Adjust the path as needed
-import backgroundImage from './assets/background-image.jpg'; // Adjust the path as needed
+import "./HeroSection.css"; // Import the CSS file for styling
+import { useSpring, animated } from 'react-spring'; // Import react-spring for animations
+import backgroundVideo from './assets/background-video.mp4'; // Import background video
+import backgroundImage from './assets/background-image.jpg'; // Import background image
 
 const HeroSection = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage the menu open/close
+  const [activeLink, setActiveLink] = useState(null); // State to highlight the active link
   const [showImage, setShowImage] = useState(false); // State to handle image visibility
   const [videoOpacity, setVideoOpacity] = useState(1); // State to handle video opacity
   const videoRef = useRef(null); // Ref to access the video element
 
+  // Function to toggle the menu open/close
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Function to handle link clicks
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
+  // Animation for fading in the hero content
   const fadeIn = useSpring({
     opacity: 1,
     transform: 'translateY(0)',
@@ -29,6 +30,7 @@ const HeroSection = () => {
     config: { duration: 2000 },
   });
 
+  // Effect to handle menu visibility on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -43,16 +45,17 @@ const HeroSection = () => {
     };
   }, []);
 
+  // Effect to preload the background image
   useEffect(() => {
-    // Preload the background image
     const img = new Image();
     img.src = backgroundImage;
   }, []);
 
+  // Effect to handle video opacity and image visibility
   useEffect(() => {
     const handleTimeUpdate = () => {
       const video = videoRef.current;
-      const fadeDuration = 4; // Seconds before the video ends to start fading
+      const fadeDuration = 4; // Duration in seconds before the video ends to start fading
       if (video.duration - video.currentTime <= fadeDuration) {
         setVideoOpacity((video.duration - video.currentTime) / fadeDuration);
         if (video.duration - video.currentTime <= fadeDuration) {
@@ -69,20 +72,25 @@ const HeroSection = () => {
     };
   }, []);
 
-
   return (
     <div className={`hero-container ${showImage ? 'show-image' : ''}`}>
+      {/* Background Video */}
       <video
         className="background-video"
         autoPlay
         muted
+        preload="auto" // Add this attribute
         ref={videoRef}
         style={{ opacity: videoOpacity }} // Apply opacity to video
       >
         <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video tag. 
       </video>
+
+      {/* Background Image */}
       <div className="background-image" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
+
+      {/* Navigation Bar */}
       <nav className="navbar" aria-label="Main Navigation">
         <div className="logo-placeholder">GrapplTech</div>
         <div
@@ -111,12 +119,16 @@ const HeroSection = () => {
           ))}
         </ul>
       </nav>
+
+      {/* Overlay for closing the menu when clicking outside */}
       {isMenuOpen && <div className="overlay" onClick={toggleMenu}></div>}
+
+      {/* Hero Content with animated fade-in effect */}
       <animated.div style={fadeIn} className="hero-content" aria-labelledby="hero-description">
-                <h1 className="headline" id="hero-description">Unlock Your Potential with GrappleTech</h1>
-                <p className="subheadline">Explore top-tier bootcamps and resources designed to elevate your skills and career.</p>
-                <button className="cta-button">Get Started</button>
-            </animated.div>
+        <h1 className="headline" id="hero-description">Unlock Your Potential with GrapplTech</h1>
+        <p className="subheadline">Explore top-tier bootcamps and resources designed to elevate your skills and career.</p>
+        <button className="cta-button">Get Started</button>
+      </animated.div>
     </div>
   );
 };
