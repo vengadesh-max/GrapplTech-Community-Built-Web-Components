@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Hero Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="path_to_your_video.mp4" type="video/mp4">
+        </video>
+        <div class="nav">
+            <div class="logo">
+                <span>GrapplTech</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hero-content">
+            <h1 class="headline">Empower Your Projects</h1>
+            <p class="subheadline">Discover, Share, and Collaborate</p>
+            <button class="cta-button" id="open-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5h2v5h-2zm0-7v-2h2v2h-2z" fill="#FFF"/>
+                </svg>
+                <span>Explore Components</span>
+            </button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-modal">&times;</span>
+                <p>Here’s some more information about our components...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
