@@ -1,0 +1,231 @@
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .hero-section {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left:0%;
+    top: 10%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, #000428, #141D6C, #4C4B9D, #0D0C3B);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+  }
+  
+  .title {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    margin: 0;
+    font-size: 3.5rem;
+    width: 40%;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  .subtitle {
+    position: absolute;
+    top: 31%;
+    width: 45%;
+    left: 1% ;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .cta-button {
+    display: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: #000428;
+    background: linear-gradient(45deg, #f9ffff, #c0fbff);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  
+  }
+  .circle{
+    position: absolute;
+    background: linear-gradient(90deg, #f1fdfc5d, transparent);
+    top: -60%;
+    left: 39.5%;
+    height: 140%;
+    width: 90%;
+    border-radius: 60%;
+    z-index: 1;
+    transform: rotate(-45deg); 
+    transition: transform 0.5s ease;
+  }
+  .man{
+    position: absolute;
+    top: 50%;
+    left: 28.9%;
+  }
+  .gal{
+    position:absolute;
+    width:300px;
+    height:200px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    transform: scale(1);
+    transition: transform 0.5s ease;
+   z-index: 1;
+  }
+  #parallax-image1 {
+    top:25%;
+    left:75%;
+  }
+  #parallax-image2{
+    top:58%;
+    right:20%;
+  }
+  #parallax-image3{
+    top:1%;
+    right:30%;
+  }
+  .gal:hover  {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 3rem;
+      width: 50%;
+    }
+  
+    .subtitle {
+      font-size: 1.25rem;
+    }
+    
+    .gal {
+      width: 250px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+
+    .title {
+      left: 2%;
+      font-size: 2rem;
+      width: 35%;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+      top: 30%;
+      width: 40%;
+      
+    }
+    .cta-button{
+      top: 150%;
+    }
+    .circle{
+      left: 54%;
+      top: -40%;
+    }
+  
+    .gal {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #parallax-image1, #parallax-image2, #parallax-image3 {
+      top: initial;
+      bottom: 10%;
+      left: initial;
+      right: 10%;
+    }
+  
+    #parallax-image1 {
+      bottom: 60%;
+      right: 10%;
+    }
+  
+    #parallax-image2 {
+      bottom: 30%;
+      right: 2%;
+    }
+  
+    #parallax-image3 {
+      bottom: 83%;
+      left: 65%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+      width: 40%;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+      top: 25%;
+    }
+  
+    .man{
+      height: 30%;
+      width: 30%;
+    }
+    .gal {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .hero-section {
+      top: 10%;
+    }
+  
+    .circle {
+      top: -25%;
+      left: 57%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+   
+    .title {
+      font-size: 1.5rem;
+      width: 30%;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+      top: 30%;
+    }
+  
+    .gal {
+      width: 100px;
+      height: 75px;
+    }
+  
+    .circle {
+      top: -25%;
+      left: 57%;
+    }
+  
+    .cta-button {
+      display: block;
+    }
+  }
+
+  @media (max-width: 400px){
+    .hero-section{
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+
+  
