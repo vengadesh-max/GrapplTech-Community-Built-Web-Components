@@ -18,3 +18,7 @@ margin-left: 1.5rem;
   text-decoration: none;
   color: white;
 }
+
+#social-link a:hover {
+  color:#1563cf ;
+}
