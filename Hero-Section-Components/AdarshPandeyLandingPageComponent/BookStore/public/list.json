@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Story Book",
+        "title": "Lorem, ipsum dolor sit amet consector adipisicing elit.",
+        "price": 10,
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721832449~exp=1721836049~hmac=ee42e3a4d1e6fb5b1eac1ef6ed7eac7d22e0f80622f3382e65a1d9199ecfb5cd&w=740"
+    },
+    {
+        "id": 2,
+        "name": "Fantasy Book",
+        "title": "Lorem, ipsum dolor sit amet consector adipisicing elit.",
+        "price": 9,
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721832449~exp=1721836049~hmac=ee42e3a4d1e6fb5b1eac1ef6ed7eac7d22e0f80622f3382e65a1d9199ecfb5cd&w=740"
+    },
+    {
+        "id": 3,
+        "name": "Crime Book",
+        "title": "Lorem, ipsum dolor sit amet consector adipisicing elit.",
+        "price": 11,
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721832449~exp=1721836049~hmac=ee42e3a4d1e6fb5b1eac1ef6ed7eac7d22e0f80622f3382e65a1d9199ecfb5cd&w=740"
+    },
+    {
+        "id": 4,
+        "name": "Facts Book",
+        "title": "Lorem, ipsum dolor sit amet consector adipisicing elit.",
+        "price": 15,
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721832449~exp=1721836049~hmac=ee42e3a4d1e6fb5b1eac1ef6ed7eac7d22e0f80622f3382e65a1d9199ecfb5cd&w=740"
+    },
+    {
+        "id": 5,
+        "name": "Comedy Book",
+        "title": "Lorem, ipsum dolor sit amet consector adipisicing elit.",
+        "price": 20,
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721832449~exp=1721836049~hmac=ee42e3a4d1e6fb5b1eac1ef6ed7eac7d22e0f80622f3382e65a1d9199ecfb5cd&w=740"
+    },
+    {
+        "id": 6,
+        "name": "Magic Book",
+        "title": "Lorem, ipsum dolor sit amet consector adipisicing elit.",
+        "price": 30,
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721832449~exp=1721836049~hmac=ee42e3a4d1e6fb5b1eac1ef6ed7eac7d22e0f80622f3382e65a1d9199ecfb5cd&w=740"
+    }
+]
