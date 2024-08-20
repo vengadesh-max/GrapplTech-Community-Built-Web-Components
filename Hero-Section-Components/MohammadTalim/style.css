@@ -48,6 +48,31 @@ header {
   }
 }
 
+main {
+  padding: 4rem 0;
+
+  .hero-copy {
+    width: 40ch;
+    color: var(--primary-color);
+
+    h1 {
+      font-size: 7rem;
+      line-height: 90%;
+    }
+
+    p {
+      margin-top: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .hero-ctas {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
 .btn {
   background: none;
   padding: 0.6rem 1.5rem;
