@@ -1,6 +1,7 @@
 import React from 'react';
 import './hospitalService.css';
-import Navbar from './Navbar';
+import Navbar from '../Component/Navbar';
+import Footer from '../Component/Footer';
 
 const HospitalServices = () => {
   const services = [
@@ -33,6 +34,7 @@ const HospitalServices = () => {
         ))}
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

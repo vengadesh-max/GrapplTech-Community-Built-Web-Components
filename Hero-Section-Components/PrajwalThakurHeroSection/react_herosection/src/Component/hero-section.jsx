@@ -1,6 +1,7 @@
 import React from 'react';
 import './hero-section.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 
@@ -19,6 +20,7 @@ function HeroSection() {
           <button className="hero-button">Learn More</button>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

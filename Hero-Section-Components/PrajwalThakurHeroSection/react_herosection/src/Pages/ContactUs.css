@@ -1,0 +1,123 @@
+/* Container and General Layout */
+.contact-container {
+    padding: 50px 20px;
+    background:#e3f2fd;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  /* Content Layout */
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+    margin-right: 30px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-title {
+    font-size: 1.8rem;
+    color: #0072ff;
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form-container {
+    flex: 2;
+    background: #ffffff;
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #0072ff;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Button Styles */
+  .contact-button {
+    padding: 12px 25px;
+    background: #0072ff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info, .contact-form-container {
+      margin: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  

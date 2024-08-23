@@ -1,6 +1,6 @@
-import React from 'react';  // First import React
-import { Link } from 'react-router-dom';  // Then import from third-party libraries
-import image from '../Images/image.png';  // After third-party imports, import local assets like images
+import React from 'react';  
+import { Link } from 'react-router-dom';
+import image from '../Images/image.png';  
 import './Navbar.css';
 
 function Navbar() {
