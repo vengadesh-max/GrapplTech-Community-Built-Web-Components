@@ -1,0 +1,250 @@
+.intro-bg {
+    display: flex;
+    background-image: linear-gradient(rgb(26, 148, 211), rgb(78, 177, 224));
+    overflow: hidden;
+}
+
+img {
+    width: 50%;
+}
+
+.newimgintro {
+    width: 100%;
+    height: max-content;
+}
+
+.intro-plane {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.intro-text-placement {
+    font-family: cursive;
+    width: 75%;
+    height: 20%;
+    position: absolute;
+    left: 17%;
+    top: 20%;
+}
+
+.intro-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.intro-letters {
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    background: linear-gradient(45deg, #FFD700, #FF4500, #FF6347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+    .intro-bg {
+        overflow: hidden;
+    }
+
+    .intro-text-placement {
+        width: 90%;
+        left: 7%;
+        top: 30%;
+
+    }
+
+    .intro-text {
+        font-size: 26px;
+    }
+
+    .newimgintro {
+        width: 800px;
+        height: 400px;
+    }
+
+    .intro-plane {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -10%;
+    }
+
+}
+
+/* Small */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .intro-bg {
+        overflow: hidden;
+    }
+
+    .intro-text-placement {
+        width: 90%;
+        left: 7%;
+        top: 30%;
+    }
+
+    .intro-text {
+        font-size: 22px;
+    }
+
+    .newimgintro {
+        width: 800px;
+        height: 400px;
+    }
+
+    .intro-plane {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -10%;
+    }
+}
+
+/* LARGE */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .intro-bg {
+        overflow: hidden;
+    }
+
+    .intro-text-placement {
+        width: 90%;
+        left: 7%;
+        top: 30%;
+    }
+
+    .intro-text {
+        font-size: 30px;
+    }
+
+    .newimgintro {
+        width: 800px;
+        height: 400px;
+    }
+
+    .intro-plane {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -10%;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .intro-bg {
+        overflow: hidden;
+    }
+
+    .intro-text-placement {
+        width: 90%;
+        height: 25%;
+        left: 7%;
+        top: 30%;
+    }
+
+    .intro-text {
+        font-size: 52px;
+    }
+
+    .newimgintro {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .intro-plane {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -10%;
+    }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .intro-bg {
+        overflow: hidden;
+    }
+
+    .intro-text-placement {
+        width: 90%;
+        height: 35%;
+        left: 7%;
+        top: 30%;
+    }
+
+    .intro-text {
+        font-size: 69px;
+    }
+
+    .newimgintro {
+        width: 800px;
+        height: 600px;
+    }
+
+    .intro-plane {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -10%;
+    }
+}
+
+/* Laptop L -> NONE*/
+
+/* 4K */
+
+@media screen and (min-width: 2560px) {
+
+    .intro-bg {
+        overflow: hidden;
+    }
+
+    .intro-text-placement {
+        width: 90%;
+        height: 35%;
+        left: 9%;
+        top: 30%;
+    }
+
+    .intro-text {
+        font-size: 120px;
+    }
+
+    .newimgintro {
+        width: 800px;
+        height: 600px;
+    }
+
+    .intro-plane {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -20%;
+    }
+}
