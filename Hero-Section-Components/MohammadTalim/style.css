@@ -74,6 +74,30 @@ main {
   }
 }
 
+section.stats {
+  margin-top: 3rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  padding: 2.5rem 5rem;
+  border-radius: 24px;
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .number {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .info {
+      opacity: 70%;
+    }
+  }
+}
+
 .btn {
   background: none;
   padding: 0.6rem 1.5rem;
