@@ -3,46 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness Webiste Design</title>
+    <title>Fitness Website Design</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="topbar">
-      <header class="container">
+      <header class="container" role="banner">
         <!-- Logo -->
         <div class="logo">
-          <img src="./assets/logo.png" alt="logo" />
+          <img src="./assets/logo.png" alt="Website logo" />
         </div>
 
         <!-- Nav links -->
-        <nav class="navbar">
-          <ul class="nav-ul">
-            <li>
+        <nav class="navbar" aria-label="Main Navigation">
+          <ul class="nav-ul" role="menu">
+            <li role="menuitem">
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li role="menuitem">
               <a href="#about">About</a>
             </li>
-            <li>
+            <li role="menuitem">
               <a href="#features">Features</a>
             </li>
-            <li>
-              <a href="#downoad">Download</a>
+            <li role="menuitem">
+              <a href="#download">Download</a>
             </li>
-            <li>
+            <li role="menuitem">
               <a href="#pricing">Pricing</a>
             </li>
           </ul>
         </nav>
 
         <!-- CTA -->
-        <div>
-          <button class="btn btn-secondary">Contact Us</button>
+        <div class="cta-group">
+          <button class="btn btn-secondary" aria-label="Contact Us">
+            Contact Us
+          </button>
+
+          <!-- Menu button -->
+          <button class="menu-btn">
+            <img src="./assets/hamburger.svg" alt="menu button" />
+          </button>
         </div>
       </header>
     </div>
 
-    <main class="container">
+    <main class="container" role="main">
       <div>
         <div class="hero-copy">
           <h1>Elevate Fitness</h1>
@@ -54,22 +61,24 @@
 
         <!-- CTAs -->
         <div class="hero-ctas">
-          <button class="btn btn-primary">Join Us Now</button>
-          <button class="btn btn-icon">
-            <img src="./assets/play-orange.svg" />Play Video
+          <button class="btn btn-primary" aria-label="Join Us Now">
+            Join Us Now
+          </button>
+          <button class="btn btn-icon" aria-label="Play Video">
+            <img src="./assets/play-orange.svg" alt="Play Video" />Play Video
           </button>
         </div>
 
-        <div class="review">
+        <div class="review" aria-label="Customer Reviews">
           <div class="avatars">
             <div class="circle avatar">
-              <img src="./assets/avatar-1.png" alt="girl" />
+              <img src="./assets/avatar-1.png" alt="Reviewer's avatar" />
             </div>
             <div class="circle avatar">
-              <img src="./assets/avatar-2.png" alt="girl" />
+              <img src="./assets/avatar-2.png" alt="Reviewer's avatar" />
             </div>
             <div class="circle play-button">
-              <img src="./assets/play.svg" alt="play" />
+              <img src="./assets/play.svg" alt="Play Review Video" />
             </div>
           </div>
 
@@ -79,11 +88,11 @@
         </div>
       </div>
 
-      <div class="hero-image">
+      <div class="hero-image" aria-label="Hero Image">
         <div class="decorations">
           <div class="subtract">
             <div class="dumbell-icon">
-              <img src="./assets/weight.svg" alt="dumbell icon" />
+              <img src="./assets/weight.svg" alt="Dumbell icon" />
             </div>
             <div class="fitness">
               <p>[fitness]</p>
@@ -93,7 +102,7 @@
         <div class="image-container">
           <img
             src="./assets/bodybuilder.png"
-            alt="bodybuilder with a dumbell."
+            alt="Bodybuilder with a dumbbell"
           />
           <svg
             width="497"
@@ -101,6 +110,7 @@
             viewBox="0 0 497 556"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               fill-rule="evenodd"
@@ -113,25 +123,36 @@
       </div>
     </main>
 
-    <section class="container">
+    <section class="container" aria-label="Statistics">
       <div class="stats">
         <div class="stat">
           <p class="number">1200</p>
-          <p class="info">New users login every single day to our app</p>
+          <p class="info">New users log in every single day to our app</p>
         </div>
         <div class="stat">
           <p class="number">32</p>
-          <p class="info">Years of experiences in health induates by expert.</p>
+          <p class="info">Years of experience in health industry by experts.</p>
         </div>
         <div class="stat">
           <p class="number">160</p>
-          <p class="info">Branch Offices to give you best services worldwide</p>
+          <p class="info">
+            Branch Offices to give you the best services worldwide
+          </p>
         </div>
         <div class="stat">
           <p class="number">130k+</p>
-          <p class="info">Users download our every single week.</p>
+          <p class="info">Users download our app every single week.</p>
         </div>
       </div>
     </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const menu = document.querySelector("nav ul");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
