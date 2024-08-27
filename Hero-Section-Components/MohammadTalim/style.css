@@ -9,6 +9,7 @@
 :root {
   --primary-color: #121838;
   --secondary-color: #f46c38;
+  --accent-color: #cdfb47;
   --white: #ffffff;
   --dim-white: #f6f6f4;
 }
@@ -49,7 +50,9 @@ header {
 }
 
 main {
+  display: flex;
   padding: 4rem 0;
+  justify-content: space-between;
 
   .hero-copy {
     width: 40ch;
@@ -72,10 +75,97 @@ main {
     display: flex;
     gap: 2rem;
   }
+
+  .hero-image {
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 2.5rem;
+
+    .decorations {
+      position: absolute;
+      left: 2rem;
+      right: 2rem;
+
+      .subtract {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .dumbell-icon {
+          img {
+            border-radius: 100%;
+            background-color: var(--accent-color);
+            width: 80px;
+            height: 80px;
+            padding: 20px;
+          }
+        }
+
+        .fitness {
+          padding: 1rem 0 0 0;
+          p {
+            color: var(--accent-color);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .image-container {
+      position: relative;
+      max-width: 100%;
+      height: auto;
+
+      img {
+        position: absolute;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .review {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.8rem;
+    background-color: var(--accent-color);
+    padding: 1.2rem;
+    height: fit-content;
+
+    .avatars {
+      display: flex;
+
+      .avatar {
+        margin-right: -1rem;
+      }
+
+      .circle {
+        width: 56px;
+        height: 56px;
+      }
+
+      .play-button {
+        background-color: var(--primary-color);
+        display: grid;
+        place-content: center;
+        border-radius: 100%;
+      }
+    }
+
+    .text p {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 110%;
+    }
+  }
 }
 
 section.stats {
-  margin-top: 3rem;
+  margin-block: 3rem;
   background-color: var(--primary-color);
   color: var(--white);
   display: flex;
