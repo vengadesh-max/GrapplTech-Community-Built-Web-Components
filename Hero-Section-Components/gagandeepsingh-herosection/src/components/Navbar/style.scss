@@ -1,0 +1,115 @@
+.nav-container{
+    .prim-nav{
+        background-color: #F5F5F5;
+   height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 34px 0px 34px;
+    
+    align-items: center;
+
+    .left, .right{
+        display: flex;
+    align-items: center
+    }
+    
+    }
+    
+
+    .logo-image{
+        height: 30px;
+        width: 54px;
+      
+    }
+    .nav-list{
+        list-style-type: none;
+    }
+    .item-list{
+    display: inline;
+    float: right;
+    margin-right: 20px;
+}
+.new-list{
+    display: flex;
+    float: right;
+      list-style-type: none;
+
+}
+.sec-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 66px;
+    .cart-cta{
+        border: none;
+    background-color: white;
+    }
+
+    
+    
+
+    .input-bar{
+    background-color: #F5F5F5;
+    border: none;
+    padding: 0px 10px;
+    outline : none;
+    border-radius: 50px;
+    }
+    .right-input{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .search-input{
+        background-color: #F5F5F5;
+    padding: 0px 20px;
+    border-radius: 50px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+.new-list{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    li{
+        margin-right: 24px;
+    }
+}
+}
+.magnifying{
+    height: 18px;
+    width: 18px
+    }
+
+
+@media only screen and (max-width: 767px) {
+    .nav-container{
+        .prim-nav{
+            padding: 0 5px;
+        }
+    }
+    .nav-container .logo-image {
+    height: 25px;
+    width: 37px;
+    }
+
+    .nav-container .nav-list{
+        font-size: 12px;
+    }
+
+    .nav-container .new-list{
+        font-size: 14px;
+        overflow: hidden;
+    }
+    .right-input{
+        display: none !important;
+    }
+
+    .sec-nav .kicks h1{
+        font-size: 18px;
+    padding: 0 22px;
+    }
+}
