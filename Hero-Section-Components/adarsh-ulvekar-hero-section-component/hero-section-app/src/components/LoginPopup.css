@@ -1,0 +1,94 @@
+/* src/components/LoginPopup.css */
+.login-popup-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for overlay */
+    backdrop-filter: blur(8px);
+    /* Blur effect for background */
+    position: fixed;
+    /* Ensure the overlay covers the whole viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* Ensure the overlay is above other content */
+}
+
+
+.login-popup {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-popup-content {
+    text-align: center;
+}
+
+.login-popup h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-button {
+    display: block;
+    width: relative;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.login-button.submit {
+    background-color: #007bff;
+}
+
+.login-button.google {
+    background-color: #db4437;
+}
+
+.login-button.github {
+    background-color: #333;
+}
+
+.login-button.outlook {
+    background-color: #0078d4;
+}
+
+.close-button {
+    background: #ff4800;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
