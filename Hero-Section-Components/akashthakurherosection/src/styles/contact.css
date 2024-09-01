@@ -1,0 +1,107 @@
+@media screen and (max-width:880px){
+  
+
+  .HomeSection{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .HomeSectionLeft{
+    background-color: black;
+    width: 100%;
+  
+  }
+  .ProfileCard{
+    color: white;
+    width: 100%;
+  }
+  .ProfilePhoto{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+  }
+  .ProfilePhoto > img{
+   width: 40%;
+   border-radius: 500px;
+  
+  }
+  .ProfileDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .name{
+    text-align: center;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .Intro{
+    font-weight:200;
+    margin: 10px;
+  }
+  .ProfileIcons{
+    display: flex;
+  }
+  .icon{
+    margin: 10px;
+  
+  }
+  
+  .insta{
+    color: rgb(246, 48, 141);
+  }
+  .facebook{
+    color:rgb(0, 119, 255);
+  }
+  .linkedin{
+    color:rgb(59, 174, 232);
+  }
+  .telegram{
+    color:rgb(59, 221, 232);
+  }
+  
+  .random{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homebtn{
+  margin: 20px;
+  padding: 5px 20px ;
+  border-radius: 10px;
+  
+  }
+  .homebtn:hover{
+    
+    border-radius: 12px;
+    background-color: yellow;
+    
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .formSection{
+    background-color: rgba(44, 113, 191, 0.1); /* Transparent purple background */
+  padding: 10px; /* Adjust padding for consistency */
+  border-radius: 5px;
+  backdrop-filter: blur(20px); /* Apply the blur effect */
+  }
+  .contactheading{
+    font-size: 30px;
+  }
+  .ProfileCardTopImage >img{
+    width: 100%;
+  }
+  
+  
+  }
