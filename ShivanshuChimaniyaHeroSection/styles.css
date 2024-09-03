@@ -1,0 +1,374 @@
+
+
+:root{
+    --navbar-background-color: rgba(0, 0, 0, 0.045);
+    --navbar-text-color: black;
+    --navbar-text-color-hover: black;
+
+    /* Drop down */
+    --navbar-dropdown-color: black; 
+    --navbar-dropdown-background-color: rgba(0, 0, 0, 0.650);
+
+    /* dark mode */
+    --darkmode-navbar-background-color: rgba(34, 34, 34, 0.8);
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: calc(100% - 3rem);
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(10px); 
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.logo-image {
+    max-height: 60px;
+    margin-right: 10px;
+    mix-blend-mode:multiply;
+}
+
+.company-name {
+    font-family: "Nerko One";
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: end;
+    vertical-align: bottom;
+    padding-top: 0.5rem;
+}
+
+.navbar-links a:hover {
+    color: var(--navbar-text-color-hover);
+    text-decoration: underline grey 1px;
+}
+
+.navbar-toggle {
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        width: calc(100%);
+        padding: 1rem 0rem;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%; 
+        background-color: var(--navbar-dropdown-background-color);
+        position: absolute;
+        top: 65px;
+        left: 0;
+        padding: 20px 0;
+        z-index: 20;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        color: white;
+        padding: 10px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .company-name {
+        font-family: "Nerko One";
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 70%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    text-align: left;
+    opacity: 0; /* Initial state for animation */
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.right-section {
+    width: 30%;
+    background-color: #fdd7c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: #fdd7c5 -12px 0px 12px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    opacity: 0; /* Initial state for animation */
+    animation: fadeInUp 1.2s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    color: #000;
+    margin: 0;
+    max-width: 500px;
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #5a5a5a;
+    margin: 20px 0;
+    max-width: 400px;
+    animation: fadeInLeft 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1.2s ease-in-out forwards;
+    animation-delay: 0.6s;
+    transform: translateY(20px); /* Initial state for animation */
+}
+
+.cta-button:hover {
+    background-color: #333;
+    transform: translateY(0);
+}
+
+.hero-content::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(135deg, #ff99cc, #66ccff);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+}
+
+.hero-image {
+    position: absolute;
+    transform: translate(-50%, 0%); /* Initial scale for animation */
+    z-index: 1;
+    opacity: 0; /* Initial state for animation */
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+
+.main-image {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background: none;
+    filter: drop-shadow(0 0 5rem #fdd7c5);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-section {
+        text-align: center;
+        animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    .hero-image {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+        animation: fadeInUp 1.5s ease-in-out forwards;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 36px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.navbar.dark-mode {
+    background-color: var(--darkmode-navbar-background-color);
+    color: #e0e0e0;
+}
+
+.navbar-links a.dark-mode {
+    color: #e0e0e0;
+}
+
+.navbar-links a.dark-mode:hover {
+    color: #bb86fc;
+}
+
+.dark-mode-toggle {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.hero-section.dark-mode {
+    background-color: #1e1e1e;
+}
+
+.left-section.dark-mode {
+    background-color: #242424;
+}
+
+.right-section.dark-mode {
+    background-color: #333;
+}
+
+.cta-button.dark-mode {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+.cta-button.dark-mode:hover {
+    background-color: #9a67ea;
+}
+
+/* TO CHANGE */
+.hero-content::before.dark-mode {
+    background: linear-gradient(135deg, #bb86fc, #03dac6);
+}
+
+.main-image.dark-mode {
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+}
