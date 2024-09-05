@@ -12,39 +12,39 @@
 </head>
 <body>
     <!-- Navbar Section -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main Navigation">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <img src="assets/nobg-logo.png" alt="Company Logo" class="logo-image">
-                <span class="company-name">Cosmic Curiosities</span>
+                <img src="assets/logo.png" alt="Company Logo" class="logo-image" aria-hidden="true">
+                <span class="company-name" aria-label="Company Name">Cosmic Curiosities</span>
             </div>
-            <div class="navbar-links" id="navbarLinks">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact Us</a>
-                <p class="dark-mode-toggle" id="darkModeToggle">🌙</p>
+            <div class="navbar-links" id="navbarLinks" aria-label="Navigation Links">
+                <a href="#home" aria-label="Home Page">Home</a>
+                <a href="#about" aria-label="About Us Section">About Us</a>
+                <a href="#blog" aria-label="Blogs Section">Blog</a>
+                <a href="#contact" aria-label="Contact Us Section">Contact Us</a>
+                <p class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</p>
             </div>
-            <div class="navbar-toggle" id="navbarToggle">
+            <div class="navbar-toggle" id="navbarToggle"  aria-label="Toggle Navigation Menu" aria-expanded="false">
                 &#9776;
             </div>
         </div>
     </nav>
     
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="left-section">
+    <section class="hero-section" aria-label="Hero Section">
+        <div class="left-section" aria-labelledby="heroHeading">
             <div class="hero-content">
                 <div class="text-content">
                     <h1>Cosmic Curiosities: Unravel the Mysteries of the Cosmos</h1>
                     <p>Uncover the secrets of black holes and nebulae. </p>
-                    <button class="cta-button">Explore Now</button>
+                    <button class="cta-button" aria-label="Get Started Button">Explore Now</button>
                 </div>
             </div>
         </div>
-        <div class="right-section">
+        <div class="right-section" aria-label="Image Section">
             <div class="hero-image">
-                <img src="assets/—Pngtree—geometric round earth icon_4285600.png" alt="Digital Banking Card" class="main-image">
+                <img src="assets/hero-image.png" alt="Cool spaceship that gets attention!" class="main-image">
             </div>
         </div>
     </section>
