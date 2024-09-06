@@ -1,0 +1,400 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/galaxy-11098_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:absolute;
+    justify-content:flex-start;
+}
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 100px;
+   
+    
+}
+.logo{
+    font-size: 20px;
+    font-family:sans-serif;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.nav ul{
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    justify-content:right;
+    margin-right: 50px;
+
+}
+.nav ul li{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: ease-in;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+.nav ul li:hover{
+    background: linear-gradient(to bottom,#8da4ae, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .btn{
+        font-family: sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        color: #fff;
+        border: 2px solid #8da4ae;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background: transparent;
+    }
+    .content h1{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+        font-size: 70px;
+        color: #fff;
+        text-align: left;
+        line-height: 70px;
+        margin-top: 3%;
+        margin-left: 50px;
+        justify-content: left;
+
+    }
+    .content span{
+        background: linear-gradient(to bottom,#8da4ae,#fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .content p{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+       color: #ffffff;
+        text-align: left;
+        text-transform: capitalize;
+        margin-left: 50px;
+        line-height: 24px;
+        padding: 30px 0px 40px;
+    }
+    
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+   
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background:#cc3434;
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+  
+.icons-social-media {
+    align-items: center;
+    justify-content: right;
+    color: #fff;
+    background: #fff;
+    margin-left: 50px;
+    margin-top: 10px;
+    left: 10px;
+    
+    padding: 5px;
+    width: 32px;
+    cursor: pointer !important;
+    transition: 300ms all ease-in-out;
+    position:block;
+
+   
+    
+    
+    
+
+  }
+  
+  .icons-social-media:hover {
+    translate: -0px -10px;
+  }
+  
+  #instagram,
+      #youtube,#twitch {
+    transition: 300ms all ease-in-out;
+    clip-path: circle(65%);
+  }
+  
+  #instagram:hover {
+    background-color: rgb(221, 157, 189);
+  }
+  
+  #youtube {
+    height: 35px;
+  }
+  
+  #youtube:hover {
+    background-color: rgb(241, 96, 96);
+  }
+  
+  #twitch:hover {
+    background-color: rgb(196, 143, 245);
+  }
+  .hamburger {
+    display: none; /* Hide the hamburger menu by default */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: 0.5s;
+  }
+  
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Mobile Screens (max-width: 479px) */
+  @media (max-width: 479px) {
+    .nav ul {
+      display: none; /* Hide the navigation menu by default */
+    }
+    .hamburger {
+      display: block; /* Show the hamburger menu on mobile screens */
+    }
+    .nav.active ul {
+      display: block; /* Show the navigation menu when the hamburger menu is clicked */
+    }
+    .nav.active .hamburger span:first-child {
+      transform: rotate(45deg);
+    }
+    .nav.active .hamburger span:nth-child(2) {
+      opacity: 0;
+    }
+    .nav.active .hamburger span:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+ /* Extra Large Screens (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .nav ul {
+    justify-content: flex-end;
+  }
+  .nav ul li {
+    margin-left: 50px;
+  }
+  .content p{
+    color: #dd3232f6;
+  }
+    
+}
+
+/* Large Screens (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav ul {
+    justify-content: flex-end;
+  }
+  .nav ul li {
+    margin-left: 30px;
+  }
+  .content,
+  .content p,
+  .content h1,
+  .content span,
+  span {
+    color: #8ba37d;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #6b6b6b;
+  }
+}
+
+/* Medium Screens (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav ul {
+    justify-content:right;
+  }
+  .nav ul li {
+    margin-left: 10px;
+   
+  }
+  .content p{
+    font-size: 15px;
+  }
+  .content,
+  .content p,
+  .content span,
+  span {
+    color: #000000;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #000000;
+  }
+  
+}
+
+/* Small Screens (576px to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .nav ul {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .nav ul li {
+    margin-left: 8px;
+  }
+  .content .p{
+    font-size: 12px;
+  }
+ .nav ul li {
+  font-size: 12px;
+ }
+ .nav ul {
+  justify-content:right;
+}
+}
+
+/* Extra Small Screens (480px to 575px) */
+@media  (min-width: 480px) and (max-width: 575px) {
+  .nav ul {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .nav ul li {
+    margin-left: 10px;
+    font-size: 8px;
+  }
+  .p{
+    font-size: 10px;
+  }
+  .content span,
+  span {
+    color: #b72c2c;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #000000;
+  }
+}
+
+/* Mobile Screens (max-width: 479px) */
+@media (max-width: 479px) {
+  .nav ul {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 6px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .content .h1{
+    color: #000000;
+  }
+  .content,
+  .content p,
+  .content h1,
+  .content span,
+  span {
+    color: #000000;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #000000;
+  }
+}
+/* Mobile Screens (max-width: 320px) */
+@media (max-width: 320px) {
+  .nav ul {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 6px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #292828;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .content,
+  .content p,
+  .content h1,
+  .content span,
+  span {
+    color: #000000;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #000000;
+  }
+  .content{
+    align-items: center;
+    justify-content: center;
+  }
+}
+.logo img {
+  filter: brightness(0) invert(1);
+}
+.content span,
+span {
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* Safari and Chrome */
+  -moz-background-clip: text; /* Firefox */
+  -o-background-clip: text; /* Opera */
+  -ms-background-clip: text; /* Internet Explorer */
+}
