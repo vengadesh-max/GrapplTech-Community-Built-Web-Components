@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Vibrant Hero Section</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <!-- SVG Icon as Brand Logo -->
+        <a class="navbar-brand" href="#">
+          <!-- Using a gear icon for illustration -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="#fff">
+            <path
+              d="M12 2a2 2 0 012 2v.08a6.82 6.82 0 011.15.45l.13-.13a2 2 0 012.83 0l.71.71a2 2 0 010 2.83l-.13.13c.19.37.34.76.45 1.15H20a2 2 0 012 2v1a2 2 0 01-2 2h-.08a6.82 6.82 0 01-.45 1.15l.13.13a2 2 0 010 2.83l-.71.71a2 2 0 01-2.83 0l-.13-.13a6.82 6.82 0 01-1.15.45V20a2 2 0 01-2 2h-1a2 2 0 01-2-2v-.08a6.82 6.82 0 01-1.15-.45l-.13.13a2 2 0 01-2.83 0l-.71-.71a2 2 0 010-2.83l.13-.13a6.82 6.82 0 01-.45-1.15H4a2 2 0 01-2-2v-1a2 2 0 012-2h.08a6.82 6.82 0 01.45-1.15l-.13-.13a2 2 0 010-2.83l.71-.71a2 2 0 012.83 0l.13.13a6.82 6.82 0 011.15-.45V4a2 2 0 012-2h1m0 6a4 4 0 100 8 4 4 0 000-8z"
+            />
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-overlay">
+        <div class="container text-center">
+          <h1 class="hero-title">Welcome to Our World of Creativity</h1>
+          <p class="hero-subtitle">
+            Discover new possibilities with our innovative solutions
+          </p>
+          <div class="hero-buttons">
+            <a href="#explore" class="btn btn-primary btn-lg">Explore Now</a>
+            <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <p class="section-subtitle">
+          We bring innovative ideas and cutting-edge solutions to your business.
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="about-box">
+              <i class="fas fa-lightbulb fa-3x"></i>
+              <h3>Innovative Ideas</h3>
+              <p>We develop creative solutions that enhance your digital experience.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-box">
+              <i class="fas fa-chart-line fa-3x"></i>
+              <h3>Market Growth</h3>
+              <p>
+                Our strategies and insights lead to market growth and improved ROI.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-box">
+              <i class="fas fa-users fa-3x"></i>
+              <h3>Global Reach</h3>
+              <p>
+                Expand your business globally with our expert solutions and networks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <img
+                src="https://dreamsdesign.in/what-does-a-web-designing-agency-do/"
+                class="service-img"
+                alt="Service 1"
+              />
+              <h3>Web Development</h3>
+              <p>High-quality, responsive web design and development services.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <img
+                src="https://techspawn.com/android-app-development/"
+                class="service-img"
+                alt="Service 2"
+              />
+              <h3>App Development</h3>
+              <p>
+                Custom mobile applications built for both iOS and Android platforms.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <img
+                src="https://www.vsvtec.com/digital-marketing-services-to-rank-high-in-search-engines/digital-marketing-company-in-hyderabad-300x300/"
+                class="service-img"
+                alt="Service 3"
+              />
+              <h3>Digital Marketing</h3>
+              <p>
+                Boost your online presence with our proven digital marketing strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Business Name. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
