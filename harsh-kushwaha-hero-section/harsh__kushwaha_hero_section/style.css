@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('./images/background-image.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo-highlight {
+    color: #ff6600;
+}
+
+.nav-links,
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc66;
+}
+
+.sign-up-btn {
+    background-color: white;
+    color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.sign-up-btn:hover {
+    background-color: #ffcc66;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: #ff6600;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ddd;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.scroll-down a {
+    position: absolute;
+    bottom: 50px;
+    font-size: 2rem;
+    color: white;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    margin-top: 70px;
+    animation: fadeIn 2.5s ease-in-out; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-right: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.get-free-20gb-btn {
+    background-color: white;
+    color: #333;
+}
+
+.learn-more-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.get-free-20gb-btn:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.learn-more-btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Next Section */
+.next-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.next-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.next-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.next-section ul {
+    list-style: disc;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #666;
+}
+
+.next-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .next-section h2 {
+        font-size: 2rem;
+    }
+
+    .next-section p, .next-section ul {
+        font-size: 1rem;
+    }
+}
