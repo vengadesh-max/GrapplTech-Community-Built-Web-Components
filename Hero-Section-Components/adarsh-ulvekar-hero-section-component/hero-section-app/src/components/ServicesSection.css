@@ -1,0 +1,67 @@
+/* src/components/ServicesSection.css */
+.services-section {
+    padding: 40px 20px;
+    background-color: #001d2e;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: #fff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.services-container:hover {
+    transform: scale3d(1.1);
+    transition: 1s;
+}
+
+/* 
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.services-card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+} */
+
+/* Corrected class name and unified transition styles */
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex: 1 1 30%;
+    transform: scale(1);
+    transition: transform 1s;
+    /* Simplified to transition only the transform property */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: #ff7300;
+}
+
+
+.service-card h3 {
+    margin: 0 0 10px;
+}
+
+.service-card p {
+    margin: 0;
+}

@@ -1,0 +1,97 @@
+/* src/components/HeroSection.css */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    color: #000000;
+
+    text-align: center;
+    background-color: #000;
+    /* Fallback background color */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    color: aliceblue;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 25px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.hero-button:hover {
+
+    transition: 0.5s;
+    transform: scale(1.2);
+    color: rgb(255, 115, 0);
+}
+
+/* Moving Background Image */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoomEffect 20s ease-in-out infinite, imageChange 20s ease-in-out infinite;
+    z-index: 0;
+}
+
+/* Zoom-in and Zoom-out Animation */
+@keyframes zoomEffect {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Image Change Animation */
+@keyframes imageChange {
+    0% {
+        background-image: url('ast/img1.png');
+    }
+
+    25% {
+        background-image: url('ast/img6.jpg');
+    }
+
+    50% {
+        background-image: url('ast/img3.jpg');
+    }
+
+    75% {
+        background-image: url('ast/img4.jpg');
+    }
+
+    100% {
+
+        background-image: url('ast/img5.jpg');
+    }
+}
