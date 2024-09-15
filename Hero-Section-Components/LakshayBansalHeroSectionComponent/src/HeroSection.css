@@ -1,0 +1,88 @@
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    padding: 50px;
+    height: 500px; /* Increased height */
+    background-color: #f5f8ff;
+  }
+  
+  .hero-content {
+    width: 66.67%; /* 2/3rd of the screen */
+  }
+  
+  .hero-content h1 {
+    font-size: 64px; /* Increased font size */
+    background: linear-gradient(to right, #000000, #3b49df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px; /* Increased font size */
+    color: #5a5a5a;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contact-btn, .learn-btn {
+    padding: 15px 30px; /* Increased button size */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-btn {
+    background-color: #3b49df;
+    color: white;
+  }
+  
+  .contact-btn:hover {
+    background-color: #2b37af;
+    transform: scale(1.05);
+  }
+  
+  .learn-btn {
+    background-color: #e0e6ff;
+    color: #3b49df;
+  }
+  
+  .learn-btn:hover {
+    background-color: #c4d1ff;
+    transform: scale(1.05);
+  }
+  
+  @keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .hero-image {
+    width: 33.33%; /* 1/3rd of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    border-radius: 15px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
