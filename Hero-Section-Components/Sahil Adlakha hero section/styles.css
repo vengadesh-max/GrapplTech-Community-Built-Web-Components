@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color:#fff;
+    justify-content: space-between;
+    padding: 7px 70px;
+}
+.logo h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.logo span{
+    color: rgb(0, 149, 255);
+}
+.nav-items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-items li{
+    padding: 10px;
+    float: left;
+}
+.nav-items a:hover{
+    color: rgb(0,149,255);
+}
+.nav-items a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: "OpenSans-SemiBold";
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 30px;
+    padding: 15px 10px;
+}
+.hero{
+    max-width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-content h7{
+    font-family:"OpenSans-Semibold";
+    font-weight: 300;
+    font-size: 50px;
+    width: 600px;
+    padding-bottom: 10px;
+}
+.hero-content button{
+    font-family:'OpenSans-Bold';
+    font-weight: 500;
+    font-size: 35px;
+    background-color: rgb(0, 149, 255);
+    width: 160px;
+    height: 60px;
+    text-decoration: none;
+    align-content: center;
+    border: 1px;
+    border-radius: 20px;
+    transition: background-color 0.4s, color 0.4s;
+}
+.hero-content button:hover,.nav-items button:hover{
+    background-color: rgba(0, 187, 250, 0.9);
+    color: #fff;
+}
+.hero-content button a{
+    text-decoration: none;
+    color: white;
+}
+.about-section,.program-section{
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.about,.programs{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 120px;
+}
+.programs ol{
+    text-decoration: none;
+    text-align: left;
+}
