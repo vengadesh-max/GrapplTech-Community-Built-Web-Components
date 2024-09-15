@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrenaline Trails</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Wanderlust</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide" src="v1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="v.2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="v3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="v4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="v5.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1>Adrenaline<br><span>Trails</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quasi placeat aut eaque suscipit aliquam minus minima, ducimus impedit vel, voluptatibus reprehenderit hic modi soluta? Magni, reprehenderit rerum! Officia pariatur soluta cumque error qui laudantium ab. Aliquam tenetur quae eum veniam optio nihil earum, rem odit, impedit officiis nemo quidem?</p>
+            
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+        <div class="slider-nav">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const  navigation= document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click",()=>{
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        //for video slider navigation
+        const btns=document.querySelectorAll(".nav-btn");
+        const slides=document.querySelectorAll(".video-slide");
+
+        var slidernav=function(manual){
+            btns.forEach((btn) =>{
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) =>{
+                slide.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+
+        }
+
+        btns.forEach((btn,i)=>{
+            btn.addEventListener("click",()=>{
+                slidernav(i);
+            })
+        })
+
+
+    </script>
+    
+</body>
+</html>
