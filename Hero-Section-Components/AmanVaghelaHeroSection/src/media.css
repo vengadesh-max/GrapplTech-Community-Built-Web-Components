@@ -1,0 +1,64 @@
+@media (max-width: 650px) {
+      .imgicon{
+            width: 20px;
+            height:20px;
+      }
+      .ticone{
+            font-size: 18px;
+      }
+      .search-input{
+            font-size: 15px;
+      }
+      .headera{
+            font-size: 18px;
+      }
+      .headLine{
+            font-size: 45px;
+      }
+      .slogen{
+            font-size: 18px;
+            line-height: 30px;
+      }
+      .svbtn>button{
+            font-size:15px ;
+      }
+      .mainif{
+            font-size: 18px;
+            line-height: 18px;
+      }
+      .fl{
+            gap: 18px;
+      }
+}
+@media (max-width: 410px){
+      .imgicon{
+            width: 18px;
+            height:18px;
+      }
+      .search-input{
+            font-size: 12px;
+      }
+      .ticone{
+            font-size: 12px;
+      }
+      .headera{
+            font-size: 12px;
+      }
+      .headLine{
+            font-size: 35px;
+      }
+      .slogen{
+            font-size: 15px;
+            line-height: 25px;
+      }
+      .svbtn>button{
+            font-size:12px ;
+      }
+      .mainif{
+            font-size: 12px;
+            line-height: 12px;
+      }
+      .fl{
+            gap: 12px;
+      }
+}
