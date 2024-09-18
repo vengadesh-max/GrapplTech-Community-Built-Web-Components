@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jones' Cheap Ass Prepaid Legal and Daycare Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Jones' Cheap Ass Prepaid Legal and Daycare Academy</h1>
+            <p class="phone-number">Call us now: 708-462-2741</p>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#legal">Legal Services</a>
+            <a href="#daycare">Daycare Services</a>
+            <a href="#consultation">Consultation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section class="banner" id="home">
+            <div class="container">
+                <h1>Welcome to Jones' Cheap Ass Prepaid Legal and Daycare Academy</h1>
+                <p>Your one-stop shop for affordable legal and daycare services</p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Jones' Cheap Ass Prepaid Legal and Daycare Academy, we believe in providing top-notch legal services and reliable daycare at prices that won't break the bank. Our team of experienced professionals is here to support you and your family.</p>
+            </div>
+        </section>
+
+        <section class="services" id="legal">
+            <div class="container">
+                <h2>Legal Services</h2>
+                <div class="service-item">
+                    <div class="image-container">
+                        <img src="123.png" alt="Legal Services">
+                    </div>
+                    <div class="description">
+                        <p>We cover a variety of legal services including family law, estate planning, and business law, all at prepaid rates that fit your budget.</p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event, 'legal-full-description')">Read More</a>
+                        <p id="legal-full-description" class="full-description" style="display:none;">Our legal team is dedicated to providing comprehensive support for all your legal needs. Whether you need assistance with contracts, legal advice, or representation in court, we've got you covered.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="daycare">
+            <div class="container">
+                <h2>Daycare Services</h2>
+                <div class="service-item">
+                    <div class="image-container">
+                        <img src="123.png" alt="Daycare Services">
+                    </div>
+                    <div class="description">
+                        <p>Our daycare academy offers a safe and nurturing environment for your children with full-time, part-time, and after-school programs available.</p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event, 'daycare-full-description')">Read More</a>
+                        <p id="daycare-full-description" class="full-description" style="display:none;">Our daycare professionals are highly trained and passionate about childcare. We provide educational activities, healthy meals, and a safe space for your children to grow and thrive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="consultation">
+            <div class="container">
+                <h2>Consultation Services</h2>
+                <div class="service-item">
+                    <div class="image-container">
+                        <img src="123.png" alt="Consultation Services">
+                    </div>
+                    <div class="description">
+                        <p>Need advice? Schedule a consultation with our experts for both legal and childcare concerns.</p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event, 'consultation-full-description')">Read More</a>
+                        <p id="consultation-full-description" class="full-description" style="display:none;">Our consultants are available to provide personalized advice and solutions tailored to your unique situation. Whether you have legal questions or need guidance on childcare, we are here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contact-form" method="post" action="/submit_contact_form">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Jones' Cheap Ass Prepaid Legal and Daycare Academy. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        // Function to change banner text based on scroll position
+        window.addEventListener('scroll', function() {
+            var bannerText = document.querySelector('.banner-text');
+
+            // Change the text based on scroll position
+            if (window.scrollY > 200) { // Adjust 200 to the scroll position where you want the change to occur
+                bannerText.textContent = "Fighting for your rights since 2005";
+            } else {
+                bannerText.textContent = "TOBEY JONES WILL FIGHT FOR YOU";
+            }
+        });
+
+        // Function to toggle full description and hide 'Read More' link
+        function toggleDescription(event, id) {
+            event.preventDefault();
+            var fullDescription = document.getElementById(id);
+            var readMoreLink = event.target;
+
+            if (fullDescription.style.display === 'none' || fullDescription.style.display === '') {
+                fullDescription.style.display = 'block';
+                readMoreLink.style.display = 'none';
+            } else {
+                fullDescription.style.display = 'none';
+                readMoreLink.style.display = 'inline';
+            }
+        }
+    </script>
+</body>
+</html>
