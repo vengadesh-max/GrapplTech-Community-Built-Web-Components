@@ -1,0 +1,36 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.menu h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.menu p {
+  margin: 5px 0;
+}
+
+.menu span {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
