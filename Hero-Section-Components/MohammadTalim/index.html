@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <header class="container" role="banner">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Website logo" />
+        </div>
+
+        <!-- Nav links -->
+        <nav class="navbar" aria-label="Main Navigation">
+          <ul class="nav-ul" role="menu">
+            <li role="menuitem">
+              <a href="#home">Home</a>
+            </li>
+            <li role="menuitem">
+              <a href="#about">About</a>
+            </li>
+            <li role="menuitem">
+              <a href="#features">Features</a>
+            </li>
+            <li role="menuitem">
+              <a href="#download">Download</a>
+            </li>
+            <li role="menuitem">
+              <a href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- CTA -->
+        <div class="cta-group">
+          <button class="btn btn-secondary" aria-label="Contact Us">
+            Contact Us
+          </button>
+
+          <!-- Menu button -->
+          <button class="menu-btn">
+            <img src="./assets/hamburger.svg" alt="menu button" />
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <main class="container" role="main">
+      <div>
+        <div class="hero-copy">
+          <h1>Elevate Fitness</h1>
+          <p>
+            Fitness program tailored to an individual typically focuses on
+            skills.
+          </p>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <button class="btn btn-primary" aria-label="Join Us Now">
+            Join Us Now
+          </button>
+          <button class="btn btn-icon" aria-label="Play Video">
+            <img src="./assets/play-orange.svg" alt="Play Video" />Play Video
+          </button>
+        </div>
+
+        <div class="review" aria-label="Customer Reviews">
+          <div class="avatars">
+            <div class="circle avatar">
+              <img src="./assets/avatar-1.png" alt="Reviewer's avatar" />
+            </div>
+            <div class="circle avatar">
+              <img src="./assets/avatar-2.png" alt="Reviewer's avatar" />
+            </div>
+            <div class="circle play-button">
+              <img src="./assets/play.svg" alt="Play Review Video" />
+            </div>
+          </div>
+
+          <div class="text">
+            <p>Check Review</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image" aria-label="Hero Image">
+        <div class="decorations">
+          <div class="subtract">
+            <div class="dumbell-icon">
+              <img src="./assets/weight.svg" alt="Dumbell icon" />
+            </div>
+            <div class="fitness">
+              <p>[fitness]</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img
+            src="./assets/bodybuilder.png"
+            alt="Bodybuilder with a dumbbell"
+          />
+          <svg
+            width="497"
+            height="556"
+            viewBox="0 0 497 556"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M40 104C17.9086 104 0 121.909 0 144V526C0 542.569 13.4315 556 30 556H467C483.569 556 497 542.569 497 526V97C497 80.4315 483.569 67 467 67H378C361.431 67 348 53.5685 348 37V30C348 13.4315 334.569 0 318 0H168C145.909 0 128 17.9086 128 40V64C128 86.0914 110.091 104 88 104H40Z"
+              fill="#F6F6F4"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <section class="container" aria-label="Statistics">
+      <div class="stats">
+        <div class="stat">
+          <p class="number">1200</p>
+          <p class="info">New users log in every single day to our app</p>
+        </div>
+        <div class="stat">
+          <p class="number">32</p>
+          <p class="info">Years of experience in health industry by experts.</p>
+        </div>
+        <div class="stat">
+          <p class="number">160</p>
+          <p class="info">
+            Branch Offices to give you the best services worldwide
+          </p>
+        </div>
+        <div class="stat">
+          <p class="number">130k+</p>
+          <p class="info">Users download our app every single week.</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const menu = document.querySelector("nav ul");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
