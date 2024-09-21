@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+.bg-car{
+    background-image: url('../public/bgcar2.jpg');
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh; /* Adjust the height as needed */
+    box-shadow: 0 0 15px 5px rgb(46, 41, 41);
+    padding: 2rem;
+
+}
+.vertical-inverted {
+    transform: rotate(-90deg);
+    margin-left: -9rem;
+    margin-top: 2.2rem;
+}
+.comp-name{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+
+.cc{
+    color: aliceblue;
+}
+
+.follow-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+.search-container {
+    position: relative;
+    width: 100%;
+  }
+.search-input-design{
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: none;
+    width: 100%; 
+    
+}
+.search-container .input-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+  .navv{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: max-content;
+    border-radius: 2rem;
+    list-style-type: none;
+    background-color: blue;
+  }
+  .navv li{
+    cursor: pointer;
+    padding: 0.7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 2rem;
+  }
+  .headline{
+    font-size: 2.2em;
+  }
+
+  .navv li.selected {
+    background-color: white;
+    color: blue; /* Change text color to maintain contrast */
+  }
+  .contact{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 2px 2px white;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .vertical-inverted {
+      /* transform: rotate(0deg); */
+      /* margin-left: 0.1rem; */
+  
+    }
+    .comp-name{
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+    .cc{
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    .navv{
+      font-size: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    .navv li{
+      padding: 0.7rem;
+    }
+    .vertical-inverted {
+      margin-left: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .vertical-inverted {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .vertical-inverted {
+      transform: rotate(0deg);
+      margin-left: -3px;
+    }
+    .split{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .vertical-inverted {
+      transform: rotate(0deg);
+      margin-left: -3px;
+    }
+    .split{
+      display: flex;
+      flex-direction: column;
+    }
+    .headline{
+      font-size: 3rem;
+    }
+
+    .navv{
+      padding: 0.1rem;
+    }
+  }
+  @media screen and (max-width: 465px) {
+    .navv li{
+      font-size: 0.5rem;
+    }
+    .contact{
+      text-align: center;
+    }
+  }
