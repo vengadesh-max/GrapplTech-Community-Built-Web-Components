@@ -1,0 +1,119 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-container {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image-url.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+  }
+  
+  .hero-logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .hero-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hero-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .hero-nav-links a:hover {
+    color: #ff6347;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hero-title {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .hero-cta {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-cta:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 36px;
+    }
+  
+    .hero-description {
+      font-size: 16px;
+    }
+  
+    .hero-cta {
+      padding: 12px 30px;
+      font-size: 18px;
+    }
+  
+    .hero-nav {
+      padding: 0 20px;
+    }
+  
+    .hero-nav-links {
+      gap: 15px;
+    }
+  
+    .hero-nav-links a {
+      font-size: 14px;
+    }
+  }
+  
