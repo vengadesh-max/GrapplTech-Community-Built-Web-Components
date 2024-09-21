@@ -1,0 +1,172 @@
+/* General styling */
+.about-us {
+    font-family: 'Arial', sans-serif;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Hero section */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/image2.avif) no-repeat center center/cover;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Tabs styling */
+.about-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #007bff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.tab {
+    background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    flex: 1;
+    text-align: center;
+    min-width: 150px;
+    margin-bottom: 0.5rem;
+}
+
+.tab:hover {
+    background: #0056b3;
+}
+
+.tab.active {
+    background: #0056b3;
+    font-weight: bold;
+}
+
+/* Content section styling */
+.about-content {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+/* Values list styling */
+.values-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.values-list li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .values-list {
+        font-size: 1rem;
+    }
+}
+
+/* Team section styling */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.team-card {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        max-width: 100%;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
+    .team-role {
+        font-size: 0.8rem;
+    }
+}
