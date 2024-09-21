@@ -1,0 +1,230 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* ###################################################################################################################
+
+                             ******       Services Component        ******
+
+################################################################################################################## */
+ 
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###################################################################################################################
+
+                             ******       My Work Component        ******
+
+################################################################################################################## */
+
+.myWorkHeading>h1{
+  text-align: center;
+  font-size: 4em;
+}
+.myWorkHeading{
+  height: 20%;
+}
+.myWorkContent{
+  height: 80%;
+}
+
+
+.projectcontainer {
+  width: 100%;
+  margin: auto;
+}
+
+.project-cards-container {
+  display: flex;
+  /* background: #ff7b00; */
+  height: 400px;
+  padding: 1rem;
+  box-shadow: 0 0 1rem #ec700a inset;
+  overflow-x: auto;
+  position: relative;
+  border: 5px solid #ff7b00;
+  
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.project-cards-container{
+  /* margin-top: 150px; */
+  
+  /* height: 500px; */
+  --s: 100px;
+  --t: 5px; 
+  --g: 0px; 
+  
+  padding: calc(var(--g) + var(--t));
+  outline-offset: calc(-1*var(--t));
+  mask:
+    conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+    0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+  transition: .4s;
+}
+.project-cards-container:hover {
+  outline-offset: calc(var(--g)/-1);
+}
+
+
+
+
+.project-card {
+  flex: 1 0 170px;
+  box-shadow: 0 1px 1rem -4px #000;
+  background: #fff;
+  margin: 2rem;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  height: auto;
+  
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: center;
+  }
+  
+  &:hover {
+    box-shadow: 0 4px 1rem -4px #000;
+    transform: translateY(-3px);
+  }
+}
+
+.project-card-content {
+  padding: 1rem 1rem 2rem 1rem;
+}
+.project-card-content>h1{
+  color: #03144c;
+  font-size: 0.8rem;
+}
+.project-card-content>p{
+  color: #ea6105;
+  font-size: 0.6rem;
+}
+.projectLinks{
+  font-size: .6rem;
+  font-weight: bold;
+}
