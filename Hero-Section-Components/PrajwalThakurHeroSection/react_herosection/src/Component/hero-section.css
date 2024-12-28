@@ -1,0 +1,84 @@
+
+/* Hero section styles */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url(../Images/image2.avif) 
+              no-repeat center center/cover;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Slight background for better text readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Updated title with enhanced text shadow and gradient color */
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Subtitle with gradient effect and slight shadow */
+.hero-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Description with improved typography and color */
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e0f7fa;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Button with gradient background and improved hover effect */
+.hero-button {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  transform: translateY(-5px);
+}
+
+/* Keyframes for fade-in animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

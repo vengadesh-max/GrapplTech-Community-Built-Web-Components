@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailor Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadhrinathanNHeroSectionComponent/images/fashion-repair-service-logo-design.png">
+    <link rel="stylesheet" href="/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadhrinathanNHeroSectionComponent/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href=""><img src="/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadhrinathanNHeroSectionComponent/images/fashion-repair-service-logo-design.png" alt="" width="70px" height="70px"></a>
+            <h4 style="color: #c0ab4d;">The Tailor's Touch</h4>
+        </div>
+        <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menubtn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="welcome">
+        <div class="welcome-image">
+            <video autoplay muted loop id="background-video">
+                <source src="/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadhrinathanNHeroSectionComponent/images/Background-vmake.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+                <div class="text">
+                    <h1>The Tailor's Touch</h1>
+                    <p class="welcome-quote">Every Stich, a Signature of Elegance</p>
+                    <p class="welcome1-quote">Where Every Stitch is a Signature of Elegance</p>
+                    <button class="gettouch">Get in Touch</button>
+                </div>
+                <div class="founder">
+                    <img src="/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadhrinathanNHeroSectionComponent/images/Profile3.jpg" alt="" width="250px" height="250px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="worksdone">
+        <div><h2>100+</h2><p>Expert Designers</p></div>
+        <div><h2>1000+</h2><p>Orders in Past month</p></div>
+        <div><h2>4000+</h2><p>Happy customers</p></div>
+        <div><h2>50+</h2><p>Awards won</p></div>
+    </div>
+    <div class="hero-section">
+        <div class="welbanner">
+            <img src="/GrapplTech-Community-Built-Web-Components/Hero-Section-Components/BadhrinathanNHeroSectionComponent/images/intro.jpg" width="500px" height="270px">
+            <div class="intro-section">
+                <h2 class="headline">Hello! Looking for a Stunning New Dress?</h2>
+                <b class="experience-text">Experience Unmatched Quality with Over 20 Years of Expertise in Tailoring</b>
+                <p class="contact-prompt">We're here to bring your dream dress to life. Get in touch with us today!</p>
+            </div>
+            <button class="contact-button">Contact Us Now</button>
+        </div>
+        <div class="container">
+           <div class="qut">
+            <p style="font-size: 1.2em; color: #333; margin-bottom: 10px;">Let's Purchase</p>
+            <h1>Tailored to Perfection, Styled for You!</h1>
+            <h3>Your Perfect Fit Awaits!</h3>
+            <p style=" font-size: 1em; color: #777; margin-bottom: 20px; line-height: 1.6;">At our tailor shop, we believe in crafting garments that not only fit perfectly but also reflect your unique style. With our expert tailoring services, we ensure that every stitch and seam is made with precision and care. Visit us today and experience the difference of bespoke tailoring.</p>
+            <ul>
+                <li>Custom Tailoring</li>
+                <li>Alterations</li>
+                <li>Special Occasion Wear</li>
+                <li>High-Quality Fabrics</li>
+            </ul>
+            <p class="cta-link"><a href="your-shop-link" style="text-decoration: none; color: #333;">Explore our collection and services</a></p>        
+           </div>
+        </div>
+    </div>
+    <div class="service" id="service">
+        
+    </div>
+</body>
+<script>
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const quoteElement = document.querySelector('.welcome-quote');
+    const quoteText = "Every Stitch, Signature of Elegance";
+    let index = 0;
+    const typingSpeed = 100; // Adjust this value to change typing speed
+
+    function typeLetterByLetter() {
+        if (index < quoteText.length) {
+            quoteElement.textContent += quoteText.charAt(index);
+            index++;
+            setTimeout(typeLetterByLetter, typingSpeed);
+        } else {
+            setTimeout(resetTypingAnimation, 2000); // Wait 2 seconds before restarting
+        }
+    }
+
+    function resetTypingAnimation() {
+        quoteElement.textContent = '';
+        index = 0;
+        typeLetterByLetter();
+    }
+
+    // Start the typing animation
+    typeLetterByLetter();
+});
+
+let menuList = document.getElementById("menuList");
+menuList.style.maxHeight = "0px";
+function toggleMenu(){
+    if(menuList.style.maxHeight == "0px"){
+        menuList.style.maxHeight = "300px";
+    }
+    else{
+        menuList.style.maxHeight = "0px";
+    }
+}
+</script>
+</html>

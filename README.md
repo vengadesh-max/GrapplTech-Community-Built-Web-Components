@@ -1,3 +1,33 @@
+# Hero Section for Portfolio Website
+
+This project features an elegantly designed Hero Section created for a portfolio website. The hero section serves as the first impression for visitors, offering a modern and professional look that effectively showcases the portfolio's purpose. It is fully responsive, ensuring a seamless user experience across various devices.
+
+## Key Features
+
+- **Catchy Headline:** The hero section includes a prominent headline, "Crafting Digital Experiences," that clearly conveys the main message of the portfolio.
+
+- **Subheadline:** A concise subheadline, "I design and develop websites that engage and convert," provides additional context and highlights the value proposition.
+
+- **Call-to-Action (CTA) Button:** A visually striking CTA button labeled "View My Work" encourages users to explore the portfolio further.
+
+- **Background Image:** The section is complemented by a high-quality background image, adding visual appeal without overwhelming the content. The image is slightly transparent, ensuring that the text remains readable.
+
+- **Logo and Navigation Menu:** The navigation bar at the top features a placeholder logo and clean navigation links, offering easy access to different sections of the website.
+
+- **Responsive Design:** The hero section is fully responsive, adapting to various screen sizes, from desktops to mobile devices.
+
+- **Accessibility:** Best practices for web accessibility have been followed, including proper text contrast ratios and descriptive alt text for images.
+
+## Tech Stack
+
+- **React:** Used for building the dynamic user interface.
+- **Tailwind CSS:** For crafting the responsive and modern design.
+- **TypeScript:** Ensuring type safety and improving code quality.
+- **HTML5:** The structure of the website.
+- **CSS3:** Custom styles for finer control over the appearance.
+- **ESLint & Prettier:** For maintaining code quality and consistency.
+
+
 # GrapplTech Community Built Web Components Repository
 
 ## Description
@@ -63,12 +93,8 @@ Please add your details to the table below after your pull request has been merg
 
 | Full Name       | Category      | Deployed Link | Date       | Tech Stack Used |
 | --------------- | ------------- | --------------|------------|-----------------|
-| Akhul  | Hero Section | www.example.com   | 19-06-2024 | HTML, CSS, JS   |
+| Reethu Keerthana | Hero Section | https://github.com/ReethuKeerthana/GrapplTech-Community-Built-Web-Components   | 24-06-2024 | HTML, CSS, JS   |
 
-## Example Entry
-| Full Name       | Category      | Deployed Link | Date       | Tech Stack Used |
-| --------------- | ------------- | --------------|------------|-----------------|
-| John Doe        | Hero Section  | [Link](https://example.com) | 15-07-2024 | HTML, CSS, JS   |
 
 ## Note
 - Ensure your code follows the best practices and is well-documented.

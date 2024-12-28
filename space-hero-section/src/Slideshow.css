@@ -1,0 +1,34 @@
+/* Slideshow.css */
+.slideshow {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInUp 3s ease-in-out forwards;
+    animation-delay: 1.1s;
+}
+
+.slideshow img {
+    width: 600px; /* Set a fixed width for the image */
+    height: 400px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    border-radius: 10px; /* Add rounded corners to create a card effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to give a card-like appearance */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.slideshow img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

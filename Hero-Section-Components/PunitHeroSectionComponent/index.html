@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url(https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            background-color: rgb(234, 100, 127);
+        }
+
+        /* Base Styles (Mobile-First) */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section1 {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+            /* To prevent horizontal scroll */
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10%;
+        }
+
+        nav h1 {
+            font-size: 8vw;
+            line-height: 1;
+        }
+
+        nav h1 i {
+            display: inline-block;
+            transform: rotate(45deg);
+            /* Use transform instead of rotate */
+            font-size: 1.5em;
+        }
+
+        nav h4 {
+            font-size: 4.5vw;
+            font-weight: 500;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            font-size: 4vw;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+        }
+
+        /* Part 2 (Main Content) */
+        .part2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5vw;
+            flex-direction: column;
+            /* Stack items on mobile */
+            text-align: center;
+            /* Center text on mobile */
+        }
+
+        .center {
+            padding: 20px 5%;
+            display: flex;
+            flex-direction: column;
+            /* Stack on mobile */
+        }
+
+        /* Center Part 1 */
+        .center-part1 {
+            width: 100%;
+            text-align: center;
+            /* Center text on mobile */
+        }
+
+        .center-part1 h1 {
+            font-size: 12vw;
+            font-family: monospace;
+            line-height: 1.2;
+        }
+
+        .center-part1 p {
+            font-size: 5vw;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .center-part1 button {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 5vw;
+            font-weight: 600;
+            border: none;
+        }
+
+        /* Center Part 2 */
+        .center-part2 {
+            display: none;
+            /* Hide image on mobile */
+        }
+
+        .center-part2 img,
+        .elem-part2 img {
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section1bottom {
+            display: flex;
+            flex-direction: column;
+            /* Stack items on mobile */
+            align-items: center;
+            padding: 10px;
+        }
+
+        .section1bottom img {
+            height: 50px;
+        }
+
+        /* Container Elements */
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* Stack on mobile */
+            align-items: center;
+            padding: 20px 5%;
+            gap: 20px;
+        }
+
+        .elem {
+            width: 100%;
+            border: 3px solid black;
+            border-radius: 50px;
+            box-shadow: 0px 10px 0px rgb(0, 0, 0);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            /* Stack on mobile */
+            text-align: center;
+            /* Center text on mobile */
+            gap: 20px;
+        }
+
+        .elem-part1 {
+            width: 100%;
+            text-align: center;
+            /* Center text on mobile */
+        }
+
+        .elem-part1 h2 {
+            font-size: 8vw;
+            font-weight: 500;
+        }
+
+        .elem-part1 h4 {
+            font-size: 8vw;
+            font-weight: 900;
+        }
+
+        .elem-part2 {
+            display: none;
+            /* Hide image on mobile */
+        }
+
+        /* Black Theme */
+        .black {
+            background-color: black;
+            box-shadow: 0px 10px 0px rgb(221, 221, 221);
+        }
+
+        .black h4,
+        .black i {
+            color: white;
+        }
+
+        .black h2 {
+            background-color: white;
+        }
+
+        /* Circles */
+        #circle1,
+        #circle2,
+        #circle3 {
+            margin: 2px;
+            border-radius: 50%;
+        }
+
+        #circle1 {
+            height: 10px;
+            width: 10px;
+            background-color: white;
+        }
+
+        #circle2 {
+            height: 15px;
+            width: 15px;
+            background-color: crimson;
+        }
+
+        #circle3 {
+            height: 20px;
+            width: 20px;
+            background-color: white;
+        }
+
+        /* Larger Screens (Tablets and Desktops) */
+        @media (min-width: 768px) {
+            nav h1 {
+                font-size: 3vw;
+            }
+
+            nav h4 {
+                font-size: 2.5vw;
+            }
+
+            nav button {
+                padding: 15px 30px;
+                font-size: 1.5vw;
+            }
+
+            .part2 {
+                flex-direction: row;
+                /* Row layout on larger screens */
+                text-align: left;
+                /* Left align text */
+            }
+
+            .center {
+                flex-direction: row;
+                /* Row layout on larger screens */
+            }
+
+            .center-part1,
+            .center-part2 {
+                width: 50%;
+                padding-top: 100px;
+                text-align: left;
+                /* Left align text */
+            }
+
+            .center-part2 {
+                display: block;
+                /* Show image on larger screens */
+            }
+
+            .center-part2 img {
+                height: auto;
+                width: 100%;
+            }
+
+            .section1bottom {
+                flex-direction: row;
+                /* Row layout on larger screens */
+                justify-content: space-between;
+            }
+
+            .container {
+                flex-direction: row;
+                /* Row layout on larger screens */
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .elem {
+                width: 47%;
+                gap: 30px;
+            }
+
+            .elem-part1,
+            .elem-part2 {
+                width: 50%;
+                text-align: left;
+                /* Left align text */
+            }
+
+            .elem-part2 {
+                display: block;
+                /* Show image on larger screens */
+            }
+        }
+
+        /* Extra Large Screens (Desktops) */
+        @media (min-width: 1024px) {
+            nav {
+                padding: 60px 10%;
+            }
+
+            nav h1 {
+                font-size: 2.5vw;
+            }
+
+            nav h4 {
+                font-size: 2vw;
+            }
+
+            nav button {
+                padding: 20px 40px;
+                font-size: 1.2vw;
+            }
+
+            .center-part1 h1 {
+                font-size: 5vw;
+            }
+
+            .center-part1 p {
+                font-size: 1.5vw;
+            }
+
+            .center-part1 button {
+                padding: 30px;
+                font-size: 1.2vw;
+            }
+
+            .container {
+                gap: 50px;
+            }
+
+            .elem h2 {
+                font-size: 2vw;
+            }
+
+            .elem-part1 h4 {
+                font-size: 2vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+
+
+    <section class="section1">
+        <div class="responav">
+
+
+        </div>
+
+        <nav>
+            <h1><i class="ri-gemini-fill"></i> WizardZ</h1>
+            <div class="part2">
+                <h4>About Us</h4>
+                <h4>Services</h4>
+                <h4>Use Cases</h4>
+                <h4>Pricing</h4>
+                <h4>Blog</h4>
+                <button>Request a Quote</button>
+            </div>
+        </nav>
+
+
+        <div class="center">
+            <div class="center-part1">
+                <h1>Navigateing the digital landscape for success</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam sit expedita harum pariatur amet
+                    excepturi ipsa distinctio quisquam necessitatibus cum natus non ea totam facere quos, sapiente fugit
+                    odit eum?</p>
+                <button>Book a conslutation</button>
+            </div>
+            <div class="center-part2">
+                <img src="./7378e25afef9438086b3f581bdba7af7-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+        <div class="section1bottom">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/amazon-logo-black-transparent.png" alt="">
+            <img style="height: 120px;"
+                src="https://cdn.freebiesupply.com/logos/large/2x/facebook-1-logo-png-transparent.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/netflix-2-logo-png-transparent.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/hubspot-logo-png-transparent.png" alt="">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/amazon-logo-black-transparent.png" alt="">
+
+        </div>
+    </section>
+
+
+
+
+    <section class="section2">
+        <div class="container">
+            <div class="elem line1 left">
+                <div class="elem-part1">
+
+                    <h2>Serach engine optimization</h2>
+                    <h4><i class="ri-arrow-right-circle-fill"></i> Learn More</h4>
+                </div>
+                <div class="elem-part2">
+                    <img src="https://cdni.iconscout.com/illustration/premium/preview/click-on-internet-settings-2381549-2006578.png?f=webp&h=1400"
+                        alt="">
+                </div>
+            </div>
+            <div class="elem black line1 right">
+
+                <div class="elem-part1">
+                    <h2>Paper click advertisement</h2>
+                    <h4><i class="ri-arrow-right-circle-fill"></i> Learn More</h4>
+                </div>
+                <div class="elem-part2">
+                    <img src="https://cdni.iconscout.com/illustration/premium/preview/internet-search-2381538-2006567.png?f=webp&h=1400"
+                        alt="">
+                </div>
+            </div>
+            <div class="elem black line2 left">
+                <div class="elem-part1">
+                    <h2>Social media marketing</h2>
+                    <h4><i class="ri-arrow-right-circle-fill"></i> Learn More</h4>
+                </div>
+                <div class="elem-part2">
+                    <img src="https://cdni.iconscout.com/illustration/premium/preview/clicking-impression-2381537-2006566.png?f=webp&h=1400"
+                        alt="">
+                </div>
+            </div>
+            <div class="elem line2 right">
+                <div class="elem-part1">
+                    <h2>Email marketing</h2>
+                    <h4><i class="ri-arrow-right-circle-fill"></i> Learn More</h4>
+                </div>
+                <div class="elem-part2">
+                    <img src="https://cdni.iconscout.com/illustration/premium/preview/sending-email-2381550-2006579.png?f=webp&h=1400"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--3333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var tl = gsap.timeline()
+
+        var cursor1 = document.querySelector("#circle1");
+        var cursor2 = document.querySelector("#circle2");
+        var cursor3 = document.querySelector("#circle3");
+
+        // Select the body element instead of the .main class
+        var body = document.querySelector("body");
+
+        body.addEventListener("mousemove", function (dets) {
+            var tl = gsap.timeline();
+            gsap.to(cursor1, {
+                x: dets.clientX,
+                y: dets.clientY,
+                duration: 1,
+
+            });
+            gsap.to(cursor2, {
+                x: dets.clientX,
+                y: dets.clientY,
+                duration: 2,
+
+            });
+            gsap.to(cursor3, {
+                x: dets.clientX,
+                y: dets.clientY,
+                duration: 3,
+
+            });
+        });
+
+
+        function page1Animation() {
+            tl.from("nav h1, nav h4, nav button", {
+                y: -10,
+                opacity: 0,
+                duration: 0.4,
+                delay: 1,
+                stagger: 0.2
+            })
+            tl.from(".center-part1 h1, .center-part1 p, .center-part1 button", {
+                x: -100,
+                opacity: 0,
+                duration: 0.3,
+                stagger: 0.2
+            })
+            tl.from(".center-part2 img", {
+                x: 400,
+                opacity: 0,
+                duration: 0.3
+            }, "-=0.8")
+            tl.from('.section1bottom img', {
+                opacity: 0,
+                x: -500,
+                stagger: 0.3,
+                duration: 0.3
+            })
+        }
+        page1Animation();
+
+        function page2Animation() {
+            var tl2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".section2",
+                    scroller: "body",
+                    // markers: true,
+                    start: "top 50%",
+                    end: "top 120%",
+                    scrub: 2
+                }
+            });
+
+            tl2.from(".services h1 p", {
+                y: 30,
+                opacity: 0,
+                duration: 1
+            })
+            tl2.from(".elem.line1.left", {
+                x: -300,
+                opacity: 0
+            }, "anim1")
+            tl2.from(".elem.line1.right", {
+                x: 300,
+                opacity: 0
+            }, "anim1")
+            tl2.from(".elem.line2.left", {
+                x: -300,
+                opacity: 0
+            }, "anim2")
+            tl2.from(".elem.line2.right", {
+                x: 300,
+                opacity: 0
+            }, "anim2")
+        }
+        page2Animation()
+
+        ///////////////////////////////////////
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

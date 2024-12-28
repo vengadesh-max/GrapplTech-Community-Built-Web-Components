@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <title> E-Commerce Website </title>
+      </head>
+      <body>
+        <header class="main-header">
+          <nav class="nav">
+            <div class="container nav_container">
+                <div id="web-logo">
+                    <h1 class="nav-logo-heading">BaazarHub.com</h1>
+                    <img src="./photos/logo.jpeg" alt="logo" class="nav-logo-heading">
+                </div>
+              <ul class="nav_list">
+                <li class="nav_item"><a href="./index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="./about.html" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="./contact.html" class="nav_link">Contact</a></li>
+                <li class="nav_item">
+                  <a href="./sign-up.html" class="nav_link">Sign up</a>
+                </li>
+              </ul>
+              <div class="nav_items">
+                <form action="#" class="nav_form">
+                  <input
+                    type="text"
+                    class="nav_input"
+                    placeholder="search here...." />
+                  <img src="./photos/search.png" alt="" class="nav_search" />
+                </form>
+                <img src="./photos/heart.png" alt="" class="nav_heart" />
+                <a href="./cart.html">
+                  <img src="./photos/cart.png" alt="" class="nav_cart" />
+                </a>
+              </div>
+              <span class="hamburger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </span>
+            </div>
+          </nav>
+          <nav class="mobile_nav mobile_nav_hide">
+            <ul class="mobile_nav_list">
+              <li class="mobile_nav_item">
+                <a href="/" class="mobile_nav_link">Home</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="#" class="mobile_nav_link">About</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="#" class="mobile_nav_link">Contact</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
+              </li>
+              <li class="mobile_nav_item">
+                <a href="/cart.html" class="mobile_nav_link">Cart</a>
+              </li>
+            </ul>
+          </nav>
+      </header>
+
+        <section class="section-sign">
+          <div class="auth_container">
+            <div class="auth_img">
+              <img src="./photos/auth-image.png" alt="" class="auth_image" />
+            </div>
+            <div class="auth_content">
+              <form action="" class="auth_form">
+                <h2 class="form_title">Create your account</h2>
+                <p class="auth_p">Enter your details below</p>
+                <div class="form_group">
+                  <input type="text" placeholder="Name" class="form_input" />
+                </div>
+                <div class="form_group">
+                  <input type="email" placeholder="Email" class="form_input" />
+                </div>
+                <div class="form_group form_pass">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="form_input" />
+                </div>
+                <div class="form_group">
+                  <button class="form_btn">
+                    <a href="#" class="form_link">Create Account</a>
+                  </button>
+                </div>
+                <div class="form_group">
+                  <span
+                    >Already have an account?
+                    <a href="./login.html" class="form_auth_link">Login</a></span
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <footer style="
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-left: 5%;
+            margin-right: 5%;">
+          <div class="footerLeft">
+              <div class="footerMenu">
+                  <h1 class="fMenuTitle">About Us</h1>
+                  <ul class="fList">
+                      <li class="fListItem">Company</li>
+                      <li class="fListItem">Contact</li>
+                      <li class="fListItem">Careers</li>
+                      <li class="fListItem">Affiliates</li>
+                      <li class="fListItem">Stores</li>
+                  </ul>
+              </div>
+              <div class="footerMenu">
+                  <h1 class="fMenuTitle">Useful Links</h1>
+                  <ul class="fList">
+                      <li class="fListItem">Support</li>
+                      <li class="fListItem">Refund</li>
+                      <li class="fListItem">FAQ</li>
+                      <li class="fListItem">Feedback</li>
+                      <li class="fListItem">Stories</li>
+                  </ul>
+              </div>
+              <div class="footerMenu">
+                  <h1 class="fMenuTitle">Products</h1>
+                  <ul class="fList">
+                      <li class="fListItem">Nike</li>
+                      <li class="fListItem">Puma</li>
+                      <li class="fListItem">Adidas</li>
+                      <li class="fListItem">Peter England</li>
+                      <li class="fListItem">Woodland</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footerRight">
+              <div class="footerRightMenu">
+                  <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                  <div class="fMail">
+                      <input type="text" placeholder="your@email.com" class="fInput">
+                      <button class="fButton">Join!</button>
+                  </div>
+              </div>
+              <div class="footerRightMenu">
+                  <h1 class="fMenuTitle">Follow Us</h1>
+                  <div class="fIcons">
+                      <img src="./photos/facebook.png" alt="" class="fIcon">
+                      <img src="./photos/twitter.png" alt="" class="fIcon">
+                      <img src="./photos/instagram.png" alt="" class="fIcon">
+                      <img src="./photos/whatsapp.png" alt="" class="fIcon">
+                  </div>
+              </div>
+              <div class="footerRightMenu">
+                  <span class="copyright">@BaazarHub.com All rights reserved. 2024.</span>
+              </div>
+          </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

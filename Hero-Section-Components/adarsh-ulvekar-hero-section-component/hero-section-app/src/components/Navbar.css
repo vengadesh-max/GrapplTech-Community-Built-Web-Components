@@ -1,0 +1,60 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:  #000000;
+    color: #ffffff;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    background-image: url('logon.jpeg');
+    /* Path to your image */
+    background-size: contain;
+    /* Ensures the image fits within the element */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: left center;
+    /* Positions the image */
+    width: 200px;
+    /* Adjust width as needed */
+    height: 50px;
+    /* Adjust height as needed */
+}
+
+
+
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo span {
+    padding-left: 60px;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #ff4d00;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}

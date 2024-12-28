@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>aritra-karmakar-hero-section-component</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <span class="logo"><i class="fa-solid fa-compact-disc"></i>Marble Music</span>
+            
+            <input type="checkbox" id="sideBar">
+            <label for="sideBar" class="threeDots"><i class="fa-solid fa-ellipsis-vertical"></i></label>
+            
+            <div class="nav">
+                <a href="#"><span class="navEl active">Home</span></a>
+                <a href="#"><span class="navEl">Trending</span></a>
+                <a href="#"><span class="navEl">Collections</span></a>
+                <a href="#"><span class="navEl">Premium</span></a>
+                <a href="#"><span class="navEl login">Login</span></a>
+            </div>
+
+            <button class="navLogin">Login</button>
+        </div>
+
+        <section class="hero-section">
+            <div class="text">
+                <h1 class="heading">Discover Beats that Speak to You.</h1>
+                
+                <!-- To be used for smaller width devices -->
+                <img src="./model.png" alt="imageForSmallerWidth" class="imgForSmallerWidth">
+                
+                <h4 class="subHeading">Immerse yourself in a world of music with our vast collection of songs, albums,
+                    and artists. Find the perfect tracks for every moment with our curated playlists and
+                    recommendations. Enjoy a seamless experience as you dive into music that truly resonates with you.
+                </h4>
+                <button class="heroSectionButton">SIGN UP FOR FREE</button>
+
+                <div class="sponseredBy">
+                    <p>Sponsered by:</p>
+                    
+                    <div class="sponserDiv">
+                        <div class="sponsers"><a href="#"><i class="fa-brands fa-youtube" style="color: red;"></i>Youtube</a></div>
+                        <div class="sponsers"><a href="#"><i class="fa-brands fa-soundcloud" style="color: #ff7700;"></i>SoundCloud</a></div>
+                        <div class="sponsers"><a href="#"><i class="fa-brands fa-spotify" style="color: #1db954;"></i>Spotify</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./model.png" alt="image" class="rightImage">
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

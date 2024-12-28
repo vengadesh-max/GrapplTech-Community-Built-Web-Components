@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+.newimage {
+    position: absolute;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 2;
+}
+
+.images-pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.images-pos img {
+    object-fit: cover;
+}
+
+.earth {
+    position: relative;
+    top: 15px;
+    left: 2px;
+    display: inline-block;
+    z-index: 10;
+    width: fit-content;
+    height: fit-content;
+    font-size: 60px;
+    animation: rotateGlobe 5s linear infinite;
+}
+
+.hero-text {
+    z-index: 100;
+    position: relative;
+    color: white;
+    top: 35%;
+    left: 10%;
+    font-size: 35px;
+    width: 70%;
+    height: 39%;
+}
+
+.hero-text h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-weight: larger;
+    font-style: normal;
+    display: block;
+    flex-direction: column-reverse;
+    width: max-content;
+    height: 43%;
+    padding-bottom: 12px;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    width: 600px;
+    font-size: large;
+    z-index: 10;
+    line-height: 1.5;
+    font-family: cursive;
+    margin-top: 0px;
+}
+
+.button {
+    margin-top: 10px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 30px;
+    background-image: linear-gradient(-180deg, #FF6347, #FF4500);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    cursor: pointer;
+    border: 0;
+    transition: box-shadow .2s;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.countries {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    left: 83%;
+    top: 88%;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-weight: bolder;
+    transition: all 2s infinite alternate;
+}
+
+@keyframes rotateGlobe {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+    .earth {
+        font-size: large;
+        top: 4px;
+        left: 0;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 150px;
+        width: 95%;
+        font-size: 13.5px;
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 10px;
+        width: 290px;
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 9px;
+        padding: 7px 7px;
+    }
+
+    .countries {
+        font-size: 10px;
+        left: 70%;
+        top: 90%;
+    }
+}
+
+/* Small */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    .earth {
+        font-size: large;
+        top: 4px;
+        left: 0;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 150px;
+        width: 95%;
+        font-size: 11.3px;
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 8px;
+        width: 293.5px;
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 7px;
+        padding: 5px 5px;
+    }
+
+    .countries {
+        font-size: 10px;
+        left: 70%;
+        top: 90%;
+    }
+}
+
+/* LARGE */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .earth {
+        font-size: 25px;
+        top: 6px;
+        left: 0px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 150px;
+        width: 95%;
+        font-size: 15.5px;
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 12px;
+        width: 390px;
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+    .countries {
+        font-size: 10px;
+        left: 70%;
+        top: 90%;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .earth {
+        font-size: 37px;
+        top: 7.5px;
+        left: 3px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 173px;
+        width: 95%;
+        font-size: 24px;
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+
+    .countries {
+        font-size: 15px;
+        left: 79%;
+        top: 90%;
+    }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .earth {
+        font-size: 37px;
+        top: 7.5px;
+        left: 3px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 173px;
+        width: 95%;
+        font-size: 24px;
+    }
+
+    .hero-text h1 {
+        letter-spacing: 3px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+
+    .countries {
+        font-size: 18px;
+        left: 79%;
+        top: 90%;
+    }
+}
+
+/* Laptop L -> NONE*/
+
+/* 4K */
+
+@media screen and (min-width: 2560px) {
+
+    .earth {
+        font-size: 6.5rem;
+        top: 20px;
+        left: 3px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 500px;
+        width: 95%;
+        font-size: 64px;
+    }
+
+    .hero-text h1 {
+        letter-spacing: 3px;
+        width: fit-content;
+        height: 38%;
+    }
+
+    .hero-text p {
+        margin-top: 0;
+        font-size: 35px;
+        width: 65%;
+    }
+
+    .button {
+        margin-top: 7px;
+        font-size: 30px;
+        padding: 20px 20px;
+    }
+
+    .countries {
+        font-size: 48px;
+        left: 79%;
+        top: 90%;
+    }
+}

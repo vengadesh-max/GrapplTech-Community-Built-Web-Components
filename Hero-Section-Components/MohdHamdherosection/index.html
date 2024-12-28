@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden overflow-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-4 md:px-10 py-3">
+            <div class="flex items-center gap-4 md:gap-8">
+              <div class="flex items-center gap-4 text-[#1C160C]">
+                <div class="size-4">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">FashionHub</h2>
+              </div>
+              <div class="hidden md:flex items-center gap-4 md:gap-9">
+                <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Home</a>
+                <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Men</a>
+                <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Women</a>
+                <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Kids</a>
+                <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Sale</a>
+              </div>
+            </div>
+            <div class="flex flex-1 justify-end gap-4 md:gap-8">
+              <label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-[#A18249] flex border-none bg-[#F4EFE6] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1C160C] focus:outline-0 focus:ring-0 border-none bg-[#F4EFE6] focus:border-none h-full placeholder:text-[#A18249] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+              <div class="flex gap-2">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">My Account</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Cart</span>
+                </button>
+              </div>
+              <div
+                class="hidden md:block bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                style='background-image: url("https://cdn.usegalileo.ai/stability/c2c244d4-aa94-4bcc-98c7-fae2afd33ab2.png");'
+              ></div>
+            </div>
+          </header>
+          <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+              <div class="@container">
+                <div class="@[480px]:px-2 @[480px]:py-3 md:@[480px]:px-4 md:@[480px]:py-3">
+                  <div
+                    class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-[#FFFFFF] @[480px]:rounded-xl min-h-40 md:min-h-80"
+                    style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://cdn.usegalileo.ai/sdxl10/09048c37-af9e-4874-8e29-864a5ce9f916.png");'
+                  >
+                    <div class="flex p-4"><p class="text-white tracking-light text-[22px] md:text-[28px] font-bold leading-tight">GET 5X OFF</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-3 p-3 flex-wrap pr-4">
+                <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2">
+                  <p class="text-[#1C160C] text-sm font-medium leading-normal">New Arrivals</p>
+                  <div class="text-[#1C160C]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2">
+                  <p class="text-[#1C160C] text-sm font-medium leading-normal">Men</p>
+                  <div class="text-[#1C160C]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2">
+                  <p class="text-[#1C160C] text-sm font-medium leading-normal">Women</p>
+                  <div class="text-[#1C160C]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2">
+                  <p class="text-[#1C160C] text-sm font-medium leading-normal">Kids</p>
+                  <div class="text-[#1C160C]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2">
+                  <p class="text-[#1C160C] text-sm font-medium leading-normal">Sale</p>
+                  <div class="text-[#1C160C]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="flex flex-1 flex-col items-center p-5 md:p-10">
+                <div class="flex flex-1 items-center justify-center">
+                  <div class="flex max-w-[544px] flex-col gap-3">
+                    <div class="text-[#1C160C] text-lg md:text-[26px] font-bold leading-tight tracking-[-0.015em]">Stay in the loop with our latest releases</div>
+                   
+                   
+                  </div>
+                </div>
+                
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/744d7e96-c30e-48cb-8773-85e4dcdb3ed0.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Casual Denim Jacket</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$89.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/7ee2a290-76cf-4a92-9a3a-fe9c72891081.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Classic Leather Jacket</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$199.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2a9eca90-8890-4705-82f8-9238c5d64ca5.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Urban Hoodie</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$59.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ddb60d7a-b392-44b3-8ef3-411410f111cb.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Modern Crewneck Sweater</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$69.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://images.unsplash.com/photo-1568441556126-f36ae0900180?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0NTI0NDl8MHwxfHNlYXJjaHwzfHxwYW50c3xlbnwxfHx8fDE3MjQ3NzQ3NzN8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Vintage Denim Pants</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$79.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ca590a33-5186-43ec-8e49-a01a56ec3a68.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Slim Fit Chinos</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$49.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e6cbdf6d-08c2-41a1-bd8a-ddbb5939689c.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Elegant Wool Coat</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$249.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6824458d-08cd-48b4-a6fc-1a420b70106f.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Stylish Bomber Jacket</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$159.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://images.unsplash.com/photo-1611800065437-f033a1d04b6c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0NTI0NDl8MHwxfHNlYXJjaHw0fHxwYW50c3xlbnwxfHx8fDE3MjQ3NzQ3NzN8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Comfortable Sweatpants</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/d8941083-7721-4ece-b404-f0d39d8290e5.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Chic Turtleneck Sweater</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$79.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/79e680ad-8da0-4d1f-8781-17f42b3fa614.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Lightweight Windbreaker</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$99.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ce0f6c1a-00fa-4d05-bd55-10139349a3ce.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Relaxed Fit Jeans</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$89.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/b71b159a-effd-45cb-81cd-3e166df839f1.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Formal Dress Shirt</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$59.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e912e33b-13b0-4b66-964e-3897cae3bff8.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Casual Polo Shirt</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$29.99</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/d85ffef1-3c43-4499-af1e-804d319a2ef1.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Graphic T-Shirt</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">$19.99</p>
+                  </div>
+                </div>
+              </div>
+              <footer class="flex justify-center">
+                <div class="flex max-w-[960px] flex-1 flex-col">
+                  <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+                    <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                      <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                      <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                      <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                      <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4">
+                      <a href="#">
+                        <div class="text-[#A18249]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="text-[#A18249]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="text-[#A18249]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="text-[#A18249]" data-icon="PinterestLogo" data-size="24px" data-weight="regular">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M216,112c0,22.57-7.9,43.2-22.23,58.11C180.39,184,162.25,192,144,192c-17.88,0-29.82-5.86-37.43-12L95.79,225.83A8,8,0,0,1,88,232a8.24,8.24,0,0,1-1.84-.21,8,8,0,0,1-6-9.62l32-136a8,8,0,0,1,15.58,3.66l-16.9,71.8C114,166,123.3,176,144,176c27.53,0,56-23.94,56-64A72,72,0,1,0,65.63,148a8,8,0,0,1-13.85,8A88,88,0,1,1,216,112Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <p class="text-[#A18249] text-base font-normal leading-normal">© 2023 FashionHub</p>
+                  </footer>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>

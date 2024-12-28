@@ -1,0 +1,380 @@
+* {        
+    margin: 0;   /* full margin */       
+    padding: 0;
+    box-sizing: border-box; 
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Arial', sans-serif;   /* body */
+    background-color: #040404;
+    color: white; 
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header{
+    width: 80%;
+    display: flex;
+    min-width: 480px;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    margin: 20px 0 120px 0;
+}
+
+.Container { 
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 25px 0 150px 0;
+    min-width: 480px;
+}
+
+.heroContainer{           
+    width: 100%;          /* container 2 */
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;
+    min-width: 480px;
+}
+
+.logo {
+    display: flex;      /* Foodie's Logo */
+    align-items: center;
+    position: relative;
+} 
+
+.logo h1 {        /* Foodie's Logo */
+    font-size: 33px;
+    color: #ff5757;  
+    margin-right: 15px;
+} 
+
+.bar-btn {           /* bar button */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: -4.5px;
+    font-size: 22px; 
+    color: white;  
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bar-btn:hover {
+    transform: scale(1.6);
+}
+
+nav ul {
+    list-style-type: none;       /* Nav header */
+    display: flex;
+    gap: 20px;
+    /* border: 2px solid blue;    */
+}
+
+.navTab a{          /* Home/Menu/Facility/About us button */
+    text-decoration: none;
+    font-size: 16px;  
+    color: white;
+}
+
+.active a{      /*  Home Button */
+    font-size: 20px;
+    color: #ff5757; 
+}
+
+.navContainer{
+    position: fixed;
+    left: 0;
+}
+
+.name{
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.header-buttons { 
+    display: flex;           /* Header Button */
+    gap: 15px;  
+    margin-left: -50px;
+    /* position: fixed; */
+    right: 2px;
+    top: 2px;
+    overflow: hidden;
+}  
+
+                        /* Search button*/
+.header-buttons .search-btn {
+    background-color: transparent;
+    margin-right: -10px; 
+    font-size: 1.1rem; 
+    padding: 10px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    margin-left: 50px;
+}
+
+.header-buttons .search-btn:hover {
+    transform: scale(1.6);
+}
+
+.header-buttons .cart-btn {     /* Cart Button */
+    background-color: transparent;    
+    margin-right: -1px; 
+    font-size: 1.1rem; 
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-colour 0.3s ease;
+} 
+
+.header-buttons .cart-btn:hover{ 
+    transform: scale(1.6);
+}
+
+.header-buttons a {      /* Login button */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff5757;  
+} 
+
+.fa-bars-staggered{ display: none; }
+.sideNavBar{ display: none; }
+
+
+#hero{              /* Hero Section */
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}  
+
+.hero-text {
+    max-width: 50%; 
+}
+
+.tagline {         /* Hero Section ---- H2  */
+    font-size: 3rem;
+    margin-bottom: 20px; 
+    margin-right: -50px;
+    letter-spacing: 1.5px;
+}
+
+.subTagLine{
+    font-size: 1rem;        /* Hero Section --- P */
+    margin-bottom: 30px; 
+    line-height: 1.6;
+}
+
+.btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 20px;
+    display: inline-block; 
+    border: none;
+    margin-top: 20px;  
+} 
+
+.btn-primary {       /* Get Started Button */
+    background-color: #ff5757; 
+    color: white; 
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #333; 
+}
+
+.btn-secondary {            /* See Our Menu button */
+    background-color: white; 
+    color: black;  
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #333; 
+    border: none;
+    color: white;
+}
+
+.social-buttons {       /* Social media buttons  */
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 0; 
+}
+
+.social-buttons a {         /* Social media border  */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none; 
+    border: none;
+    outline: none; 
+    transition: background-color 0.2s; 
+}
+.social-buttons a:hover {
+    opacity: 0.8;
+}
+
+.__image{         /* Chicken Image  */
+    margin-top: -100px;
+    height: 500px; 
+    width: 500px; 
+    position:relative;
+    right: -90px;
+
+    /* border: 2px solid blue; */
+} 
+
+.imageForSmallerScreenSize{ display: none; }
+
+@media (max-width: 1124px){
+    .tagline{
+        font-size: 2.5rem;
+    }
+
+    .__image{
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@media (max-width: 966px){
+    .tagline{
+        font-size: 2rem;
+    }
+
+    .__image{
+        width: 325px;
+        height: 325px;
+    }
+}
+
+@media (max-width: 800px){
+    .__image{ display: none; }
+
+    .heroContainer{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .tagline{
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+
+    .subTagLine{
+        text-align: center;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary, .btn-secondary{
+        margin: 0 0 0 0;
+    }
+
+    .btn-secondary{ margin-top: 25px; }
+
+    .social-buttons a{
+        margin: 0 0 0 0;
+    }
+
+    .social-buttons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+
+    .search-btn, .cart-btn, .login-btn{ display: none; }
+
+    .imageForSmallerScreenSize{
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 18px;
+        margin: 30px 0 30px 0;
+    }
+
+    .fa-bars-staggered{ display: inline-block; }
+
+    nav ul{
+        display: none;
+    }
+
+    #sideBar:checked ~ .fa-bars-staggered{
+        transform: translateX(-10px);
+    }
+    #sideBar:checked ~ .sideNavBar{
+        display: block;
+        border-top: 10px solid black;
+        position: absolute;
+        top: 15px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 160px;
+        height: 220px;
+        background-color: #333;
+        padding: 5px 10px 10px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .sideNavBar ul{ list-style-type: none;}
+
+    .threeDots{
+        z-index: 1000;
+    }
+
+    .sideNavBar ul li{
+        margin: 0px 0 30px 0;
+    }
+    
+    .sideNavBar ul li a{
+        background: none;
+    }
+}
+
+@media (max-width: 565px){
+    .header{
+        margin: 30px 0 80px 0;
+    }
+
+    .tagline{
+        font-size: 1.5rem;
+    }
+} 

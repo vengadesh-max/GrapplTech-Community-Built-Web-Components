@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main wrapper for the content -->
+    <div class="content-wrapper">
+        
+        <!-- Background video section -->
+        <div class="background">
+            <video autoplay loop muted>
+                <source src="video/Background.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <!-- Header section with logo and navigation -->
+        <header class="header">
+            <div class="header__logo">
+                <div class="square"></div>
+                <div class="text">
+                    <div>Grappl</div>
+                    <div>Tech</div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <button class="header__nav__signin">Sign In</button>
+                <div class="header__nav__menu">
+                    <img src="images/icons/icons8-menu-30.png" alt="Menu">
+                </div>
+            </div>        
+        </header>
+        
+        <!-- Overlay for menu navigation -->
+        <div class="overlay">
+            <div class="menu-container">
+                <ul class="chessboard-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Team</a></li>
+                    <li><a href="index.html">Programs</a></li>
+                    <li><a href="index.html">Career</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>        
+        </div>
+        
+        <!-- Hero section with welcome message and subscribe button -->
+        <section class="hero-section">
+            <div class="line">
+                <span>Welcome to GrapplTech</span>
+            </div>
+            <div class="hero-animation">Don't judge us by our name. From scratch to finish, we take care of it all.<br>And we deliver too! You're Welcome.</div>
+            <div class="hero-section__subscribe">
+                <button onclick="subscribe()" id="cta">Subscribe</button>
+            </div>
+            
+            <!-- Social media buttons -->
+            <div class="floating-button">
+                <div class="social-buttons">
+                    <a href="#" class="social-button facebook-button"></a>
+                    <a href="#" class="social-button twitter-button"></a>
+                    <a href="#" class="social-button instagram-button"></a>
+                    <a href="#" class="social-button linkedin-button"></a>
+                    <a href="#" class="social-button telegram-button"></a>
+                    <a href="#" class="social-button behance-button"></a>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- Including external JavaScript libraries and custom script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

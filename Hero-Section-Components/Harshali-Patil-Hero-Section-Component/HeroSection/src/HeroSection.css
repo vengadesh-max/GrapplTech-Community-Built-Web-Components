@@ -1,0 +1,96 @@
+/* src/HeroSection.css */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://www.istockphoto.com/photo/person-holds-a-smartphone-with-mobile-banking-icons-projection-gm1304484797-395623703'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  margin: 0 10px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007BFF; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.calculator {
+  margin: 20px 0;
+}
+
+.calculator input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.testimonials {
+  margin-top: 40px;
+  width: 80%;
+}
+
+.testimonial {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.contact-form {
+  margin-top: 40px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green color for submit button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

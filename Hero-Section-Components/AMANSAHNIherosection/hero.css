@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+button{
+    background-color: #24a5b9;
+}
+#logo {
+    color: rgb(55, 141, 185);
+    font-size: 25px;
+}
+a{
+    margin-right: 200px;
+
+}
+#home{
+    background-color: #0f1111;
+    height: 800px;
+    
+}
+#banner{
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+#dis{
+    margin-left: 50px;
+    margin-right: 800px;
+}
+#img{
+    ;
+    margin-left: 900px;
+}

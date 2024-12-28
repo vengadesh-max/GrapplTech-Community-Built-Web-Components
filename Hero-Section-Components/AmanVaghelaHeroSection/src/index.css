@@ -1,0 +1,141 @@
+html,body{
+  background-image: url("./bgimage.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding: 0;
+  font-family:serif;
+}
+::placeholder{
+  color:rgb(211, 204, 204);
+}
+.main{
+  width: 100%;
+}
+.header{
+  background-color: #310339;
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  justify-content: space-between;
+}
+.imgicon{
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+}
+.search-input{
+  font-size: 20px;
+  color:white;
+  background-color:#bb46ff;
+  margin-left: 55px;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 10px;
+}
+.tmain{
+  display: flex;
+  gap:12px
+}
+.ticone{
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  color: white;
+}
+.ticone:hover, .headera:hover{
+  transform: scale(1.3);
+  transition:.7s;
+}
+.headersec{
+  background-color:#310339;
+  border-top:1px solid white;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap:25px;
+  padding:10px 0px;
+}
+.headera{
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+.NoteMain{
+  padding: 30px;
+  text-align: center;
+  color:white;
+}
+.headLine{
+  font-size: 60px;
+  color:rgb(254, 221, 7)
+}
+.slogen{
+  font-size: 30px;
+  line-height: 40px;
+}
+.svbtn{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.svbtn>button{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 5px 10px;
+  text-align: center;
+  color:#310339;
+  background-color: rgb(236, 171, 18);
+  border: none;
+  border-radius: 5px;
+}
+.svbtn>button:hover{
+  transform: scale(1.3);
+  transition-duration:.5s ;
+}
+/*footer css start----------*/
+.mainFooter{
+  width: 100%;
+  border-radius:20px 20px 0px 0px;
+  background-color:#310339;
+  position:absolute;
+  bottom: 0;
+}
+.top-footer{
+  padding: 20px;
+}
+.iconfooter{
+  padding:20px 0px;
+  font-size: 25px;
+  display: flex;
+  justify-content:center;
+  gap:10px;
+}
+.mainif{
+  background-color: white;
+  padding: 5px;
+  line-height: 25px;
+  border-radius: 50%;
+}
+.fl{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footerLinks{
+  text-decoration: none;
+  color:white
+}
+.footercopy{
+  color:#310339;
+  font-weight: 600;
+  text-align: center;
+  background-color:rgb(236, 171, 18);
+  padding: 10px 0px;
+  border-radius:10px 10px 0px 0px;
+}

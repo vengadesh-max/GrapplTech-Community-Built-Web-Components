@@ -1,0 +1,57 @@
+
+.container{
+    position: relative;
+  text-align: center;
+  .image{
+    width: 100%;
+  }
+  .carousel-text{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    top: 0px;
+    height: 100%;
+    font-family: fantasy;
+  }
+    .image-text{
+        font-weight: 500;
+        top: 8px;
+        margin: unset !important;
+        left: 16px;
+        color: white;
+        font-size: 8em;
+    }
+
+
+}
+@keyframes gradientTransition {
+  0% {
+    color: #eb0cd9;
+  }
+  25% {
+    color: #0cf17b;
+  }
+  50% {
+    color: #0bb8f1;
+  }
+  75% {
+    color: #97ef0b;
+  }
+  100% {
+    color: #e7a90c;
+  }
+}
+
+.image-text {
+  background-size: 400% 400%;
+  animation: gradientTransition 32s linear infinite;
+}
+
+@media only screen and (max-width: 767px) {
+  .container .carousel-text .image-text {
+    font-size: 2em;
+  }
+}

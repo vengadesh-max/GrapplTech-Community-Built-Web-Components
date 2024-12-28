@@ -1,0 +1,384 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding css to the body */
+
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400; 
+    padding:10px;
+    }
+
+/* Background image */
+
+.background{
+    height: 95vh;
+    background-image: url(./images/pexels-khairulonggon-908184.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 10px;
+    background-color: #77777775;
+    height: 120px;
+}
+
+/* Logo */
+.logo{
+    height: 120px;
+}
+/* Adding css to the navigation bar */
+.search{
+    height:30px;
+    display:flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    align-items: center;
+    border-style: none;
+    border-radius: 50px;
+    margin-right:auto;
+}
+
+
+.search input{
+ padding: 5px;
+ width: 200px;
+    outline:none;
+    font-weight: 500;
+    border:none;
+    transition:max-width 0.8s;
+    
+}
+
+.icon{
+    align-items: center;
+    padding:4px 2px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    margin-left:auto;
+}
+.main-nav{
+        width: 100%;
+        display: flex;
+    }
+
+.nav-items{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin :10px;
+        gap: 1rem;
+ }
+
+.main-nav li{
+    margin-right: 27px;
+}
+
+.nav-items-link{
+    display: inline-block;
+text-decoration: none;
+font-size: 22px;
+font-weight: 600;
+color:#1d1c1c;
+transition:all 0.3s;
+}
+
+.nav-items-link:hover{
+color:#500606;
+}
+
+/*sign-in button*/
+.main-nav .nav-buttons button{
+    margin-left : 15px;
+    padding:10px 20px;
+    border-radius: 40px;
+    font-family:'Times New Roman', Times, serif;
+    background: none;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    background-color: #750404d2;
+    color: #ffffffde;
+}
+
+.main-nav .nav-buttons button:hover{
+    background-color: rgba(92, 2, 2, 0.904);
+     transition:all 0.5s;
+    color:rgb(255, 255, 255);
+}
+
+.button-nav{
+    border: none;
+    background:none;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-nav-icon{
+  height: 2.8rem;
+  width:2.8rem;
+  color: #2b2a2a;
+}
+
+.menu-nav-icon[name="close-outline"]{
+display: none;
+}
+
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    z-index: 20; /* Increased z-index to be above blur-overlay */
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #fff;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.login,
+.register{
+    position:relative;
+    height: 250px;
+    width:100%;
+    margin-top:30px;
+}
+
+.cls-btn{
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    right:12px;
+    cursor: pointer;
+    color: #888181;
+}
+
+.form-head{
+font-size: 30px;
+font-weight: 600;
+color: #970505;
+display:flex;
+justify-content: center;
+}
+
+.email, 
+.pass {
+    padding:15px 30px;
+    width: 95%;
+    outline:none;
+    margin:10px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-btn,
+.register-btn{
+    width: 100%;
+    padding:10px 0;
+    background-color: #750404;
+    border: none;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600px;
+    color:#ebe9e9;
+    border-radius: 3px;
+    cursor: pointer;
+    margin:17px 0;
+}
+
+.email:focus, 
+.pass:focus{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login a.link{
+    text-decoration:none;
+}
+
+.login a.link:hover{
+    text-decoration:underline;
+}
+
+.login :where(.link){
+display: inline-flex;
+margin-top:13px;
+font-size: 14px;
+}
+
+.bottom-link{
+    display: flex;
+    justify-content: center;
+}
+ .policy-text{
+    display: flex;
+    margin-top: 14px;
+    align-items: center;
+}
+
+.policy-text input{
+width: 14px;
+height: 14px;
+margin-right: 7px;
+}
+
+.blur-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:10;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events:none;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: 0.1s ease;
+}
+
+.show-popup .blur-overlay{
+opacity: 1;
+pointer-events: auto;
+}
+
+.show-popup .form-popup{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%);
+    transition:transform 0.3s ease opacity 0.1s;
+}
+
+.form-popup .signup,.form-popup.show-signup .signin{
+display: none;
+}
+
+.form-popup.show-signup .signup{
+display:block;
+}
+
+/* Headline*/
+.text-box{
+    position:fixed;
+    display: block;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.heading{
+   color:#141414;
+   backface-visibility: hidden;
+}
+
+.heading-main{
+display: block;
+font-family: Playfair Display, serif;
+font-size: 60px;
+font-weight: 500;
+letter-spacing: 5px;
+animation-name: moveInLeft;
+animation-duration: 1s;
+animation-timing-function:ease-out ;
+}
+
+.heading-sub{
+    color: #8f0909;
+display: block;
+font-size: 30px;
+letter-spacing: 4px;
+animation-name: moveInRight;
+animation-duration: 1s;
+animation-timing-function:ease-out ;
+margin-bottom: 35px;
+}
+
+@keyframes moveInLeft {
+    0%{
+    opacity: 0;
+    transform: translateX(-100px);
+    }
+    80%{
+    transform: translateX(10px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+    opacity: 0;
+    transform: translateX(100px);
+    }
+    80%{
+    transform: translateX(-10px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+/*Explore button*/
+@keyframes moveInBottom{
+    0%{
+    opacity: 0;
+    transform: translateX(30px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.btn:link,
+.btn:visited{
+text-transform: uppercase;
+border-radius: 100px;
+padding:15px 50px;
+display: inline-block;
+transition: all .2s;
+}
+
+.btn:active{
+transform: translateY(-5px);
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+    transform: translateY(2px);
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-explore{
+background-color: #fff;
+color: #070000;
+font-size: 22px;
+text-decoration: none;
+animation:moveInBottom .5s ease-out .75s;
+animation-fill-mode: backwards;
+}
+
+.hidden{
+    display: none;
+}
+
+

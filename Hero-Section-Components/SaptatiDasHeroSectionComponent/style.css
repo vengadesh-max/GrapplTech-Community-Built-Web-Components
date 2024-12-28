@@ -1,0 +1,425 @@
+/* Reset default margins and padding, ensure consistent box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define CSS variables for colors */
+:root{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+/* Global styles for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide scrollbars on the body */
+    transition: 0.3s, color 0.3s;
+    background: url(video/Embark\ on\ a\ cosmic\ journey\ through\ the\ Milky\ Way\ galaxy\,\ where\ breathtaking\ transitions\ unfold\ like\ a\ mesmerizing\ dance\ of\ stars.\ Witness\ the\ celestial\ beauty\ that\ evolves\ with\ each\ passing\ moment\,\ painting\ a\ canva.mp4);
+    color: var(--secondary-color);
+}
+
+/* Styles for content wrapper */
+.content-wrapper {
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Safari and Chrome */
+.content-wrapper::-webkit-scrollbar {
+    display: none; 
+}
+
+/* Styles for the background video */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+  
+.background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Keyframes for background animation (if needed) */
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    100% {
+        transform: translate(calc(-15% + 30% * (random() - 0.5)), calc(-15% + 30% * (random() - 0.5)));
+    }
+}
+
+/* Styles for the header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Adjust the z-index as needed */
+    background-color: transparent;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.5s ease-in-out;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.header__logo .square {
+    width: 40px;
+    height: 40px;
+    border: solid var(--primary-color);
+    margin-right: 2vh;
+    border-radius: 20%;
+}
+
+.header__logo .text {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__menu {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 17px;
+    margin-left: 5vh;
+}
+
+.header__nav__signin {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.header__nav__signin:hover {
+    filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.696));
+    border: 2px dashed var(--primary-color);
+    border-radius: 10%;
+}
+
+/* Overlay for the menu */
+.overlay {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.overlay.show {
+    top: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .header__logo .square{
+        width: 30px;
+        height: 30px;
+    }
+    .header__logo .text{
+        font-size: 15px;
+        font-style: bold;
+    }
+    .header__nav__signin{
+        font-size: 17px;
+    }
+    .header__nav__menu{
+        margin-left: 2vh;
+    }
+    .overlay {
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        transition: right 0.5s ease-in-out;
+    }
+    .overlay.show {
+        right: 0;
+    }
+}
+
+/* Styles for the menu container */
+.menu-container {
+    width: 100%;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.menu-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .menu-container ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.menu-container li {
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.menu-container li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-container li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-container li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.menu-container li:hover {
+    transform: scale(1.1);
+}
+
+/* Styles for the hero section */
+.hero-section {
+    margin-top: 14vh;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section .line span {
+    display: block;
+    font-size: 60px;
+    margin-top: 10vh;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.hero-animation {
+    margin: 4vh 0;
+    font-size: 18px;
+    color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section .line span {
+        font-size: 40px;
+        margin-top: 15vh;
+    }
+    .hero-animation {
+        font-size: 16px;
+    }
+}
+
+.hero-section__subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section__subscribe input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.hero-section__subscribe button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-section__subscribe button:hover {
+    filter: drop-shadow(0px 0px 30px var(--primary-color));
+    border: 2px dashed var(--primary-color);
+    border-radius: 10%;
+}
+
+/* Floating social media buttons */
+.floating-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.246);
+    border: dotted rgba(245, 245, 245, 0.371);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all transform 0.3s ease;
+}
+
+.floating-button::before {
+    content: "+";
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.floating-button::after{
+    visibility: hidden;
+    font-size: 40px;
+    color: var(--primary-color);
+    visibility: hidden;
+}
+
+/* Show social buttons on hover */
+.floating-button:hover .social-buttons {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.696));
+}
+
+.social-buttons {
+    position: absolute;
+    right: 60px;
+    bottom: -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.341);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-button:hover {
+    transform: translateY(-5px);
+}
+
+/* Individual social media button styles */
+.facebook-button {
+    background-image: url('images/icons/icons8-facebook-50\ \(1\).png');
+}
+
+.twitter-button {
+    background-image: url('images/icons/icons8-twitterx-50\ \(1\).png');
+}
+
+.instagram-button {
+    background-image: url('images/icons/icons8-instagram-50\ \(1\).png');
+}
+
+.linkedin-button {
+    background-image: url('images/icons/icons8-linkedin-50\ \(1\).png');
+}
+
+.telegram-button {
+    background-image: url('images/icons/icons8-telegram-50.png');
+}
+
+.behance-button {
+    background-image: url('images/icons/icons8-behance-50.png');
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .floating-button {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .floating-button::before {
+        content: "+";
+        font-size: 30px;
+    }
+    .social-buttons {
+        right: 50px;
+    }
+    .social-button {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
